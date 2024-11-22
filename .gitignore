@@ -42,3 +42,4 @@ mysql.data.entityframework/
 *.bak
 *.db
 *.DS_Store
+*.md

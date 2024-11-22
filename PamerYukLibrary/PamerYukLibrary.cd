@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PamerYukLibrary.User">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACAAQIAAAMAAAACAAACAAAAQgAAAMA=</HashCode>
+      <FileName>Entity\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PamerYukLibrary.KisahHidup">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAQAgIAEAICAAAAAAAAAAIAAAACAAAAAAAAAAQA=</HashCode>
+      <FileName>Entity\KisahHidup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+      <Field Name="organisasi" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PamerYukLibrary.Organisasi">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAQAIAAEACAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Entity\Organisasi.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kota" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PamerYukLibrary.Kota">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Entity\Kota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PamerYukLibrary.Konten">
+    <Position X="7" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABCACAAAAAgAAAAAABAAAAAAAAAAAAACAAAQAgAAkg=</HashCode>
+      <FileName>Entity\Konten.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tag" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PamerYukLibrary.Teman">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBQAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entity\Teman.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+      <Field Name="status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PamerYukLibrary.Komen">
+    <Position X="5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAJAAAACQAAAAAgAAAAIAAAAAAAAwA=</HashCode>
+      <FileName>Entity\Komen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+      <Field Name="konten" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="PamerYukLibrary.Value.StatusPertemanan">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Value\StatusPertemanan.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

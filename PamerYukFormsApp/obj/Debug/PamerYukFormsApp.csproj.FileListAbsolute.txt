@@ -1,0 +1,14 @@
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe.config
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.pdb
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\MySql.Data.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.AssemblyReference.cache
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.FormUtama.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Properties.Resources.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.GenerateResource.cache
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYuk.DC7583D1.Up2Date
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb

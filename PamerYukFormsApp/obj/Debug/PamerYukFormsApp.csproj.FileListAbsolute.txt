@@ -12,3 +12,7 @@ C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYuk
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYuk.DC7583D1.Up2Date
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftar.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKisahHidup.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormMasuk.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahOrganisasi.resources

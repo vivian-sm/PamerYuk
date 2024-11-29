@@ -43,3 +43,6 @@ mysql.data.entityframework/
 *.db
 *.DS_Store
 *.md
+*.mwb
+*.MySQL
+*.sql

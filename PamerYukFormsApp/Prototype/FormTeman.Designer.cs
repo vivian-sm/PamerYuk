@@ -1,6 +1,6 @@
-﻿namespace PamerYukFormsApp
+﻿namespace PamerYukFormsApp.Prototype
 {
-    partial class FormUtama
+    partial class FormTeman
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormUtama
+            // FormTeman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1888, 992);
-            this.Name = "FormUtama";
-            this.Text = "FormUtama";
-            this.Load += new System.EventHandler(this.FormUtama_Load);
+            this.Name = "FormTeman";
+            this.Text = "FormTeman";
             this.ResumeLayout(false);
 
         }
@@ -45,4 +44,3 @@
         #endregion
     }
 }
-

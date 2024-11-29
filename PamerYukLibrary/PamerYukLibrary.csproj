@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DataAccessObject.cs" />
     <Compile Include="Database\KoneksiDatabase.cs" />
     <Compile Include="Entity\KisahHidup.cs" />
     <Compile Include="Entity\User.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entity\Komen.cs" />
     <Compile Include="Entity\Teman.cs" />
+    <Compile Include="Repositories\Repositories.cs" />
     <Compile Include="Value\StatusPertemanan.cs" />
   </ItemGroup>
   <ItemGroup>

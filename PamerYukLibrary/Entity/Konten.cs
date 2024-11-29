@@ -11,12 +11,12 @@ namespace PamerYukLibrary
     {
         private int id;
         private string caption;
-        private Image foto;
+        private string foto;
         private string Video;
         private DateTime tglUpload;
         private List<User> tag;
 
-        public Konten(int id, string caption, Image foto, string video, DateTime tglUpload, List<User> tag)
+        public Konten(int id, string caption, string foto, string video, DateTime tglUpload, List<User> tag)
         {
             this.Id = id;
             this.Caption = caption;
@@ -28,7 +28,7 @@ namespace PamerYukLibrary
 
         public int Id { get => id; set => id = value; }
         public string Caption { get => caption; set => caption = value; }
-        public Image Foto { get => foto; set => foto = value; }
+        public string Foto { get => foto; set => foto = value; }
         public string Video1 { get => Video; set => Video = value; }
         public DateTime TglUpload { get => tglUpload; set => tglUpload = value; }
         public List<User> Tag { get => tag; set => tag = value; }

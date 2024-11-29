@@ -54,6 +54,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>PamerYuk.settings</DependentUpon>
     </Compile>
+    <Compile Include="Prototype\FormAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormAkun.Designer.cs">
+      <DependentUpon>FormAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormAkunTeman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormAkunTeman.Designer.cs">
+      <DependentUpon>FormAkunTeman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype\FormDaftar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,35 @@
     <Compile Include="Prototype\FormKisahHidup.Designer.cs">
       <DependentUpon>FormKisahHidup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype\FormKonten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormKonten.Designer.cs">
+      <DependentUpon>FormKonten.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype\FormMasuk.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Prototype\FormMasuk.Designer.cs">
       <DependentUpon>FormMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormTambahKonten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormTambahKonten.Designer.cs">
+      <DependentUpon>FormTambahKonten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormTambahOrganisasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormTambahOrganisasi.Designer.cs">
+      <DependentUpon>FormTambahOrganisasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormTeman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormTeman.Designer.cs">
+      <DependentUpon>FormTeman.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype\FormUtama.cs">
       <SubType>Form</SubType>
@@ -80,14 +116,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Prototype\FormAkun.resx">
+      <DependentUpon>FormAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormAkunTeman.resx">
+      <DependentUpon>FormAkunTeman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormDaftar.resx">
       <DependentUpon>FormDaftar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormKisahHidup.resx">
       <DependentUpon>FormKisahHidup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormKonten.resx">
+      <DependentUpon>FormKonten.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormMasuk.resx">
       <DependentUpon>FormMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormTambahKonten.resx">
+      <DependentUpon>FormTambahKonten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormTambahOrganisasi.resx">
+      <DependentUpon>FormTambahOrganisasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormTeman.resx">
+      <DependentUpon>FormTeman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormUtama.resx">
       <DependentUpon>FormUtama.cs</DependentUpon>

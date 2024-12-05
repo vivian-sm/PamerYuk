@@ -15,13 +15,13 @@ namespace PamerYukLibrary
         private string password;
         private DateTime tglLahir;
         private string noKTP;
-        private Image foto;
+        private string foto;
         private Kota kota;
         private List<KisahHidup> listKisahHidup;
         #endregion
 
         #region CONSTRUCTORS
-        public User(string username, string password, DateTime tglLahir, string noKTP, Image foto, Kota kota)
+        public User(string username, string password, DateTime tglLahir, string noKTP, string foto, Kota kota)
         {
             this.Username = username;
             this.Password = password;
@@ -94,7 +94,7 @@ namespace PamerYukLibrary
                 }
             }
         }
-        public Image Foto
+        public string Foto
         {
             get => foto;
             set
@@ -132,7 +132,7 @@ namespace PamerYukLibrary
         {
             List<KisahHidup> list = new List<KisahHidup>();
             //Select List from Database
-            list = DataAccessObject.Select_ListKisahHidup_Users(this.Username);
+            list = DAO_Users.Select_ListKisahHidup_Users(this.Username);
       
             return list;
         }

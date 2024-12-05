@@ -65,6 +65,7 @@
             this.buttonDaftar.TabIndex = 3;
             this.buttonDaftar.Text = "Daftar";
             this.buttonDaftar.UseVisualStyleBackColor = true;
+            this.buttonDaftar.Click += new System.EventHandler(this.buttonDaftar_Click);
             // 
             // labelUsername
             // 
@@ -131,6 +132,7 @@
             this.Controls.Add(this.textBoxUsername);
             this.Name = "FormMasuk";
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.FormMasuk_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

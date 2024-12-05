@@ -12,7 +12,7 @@ using PamerYukLibrary.Database;
 
 namespace PamerYukLibrary.DAO
 {
-    public class DataAccessObject
+    public class DAO_Users
     {
         //This class exist to connect repositories to database
 
@@ -77,7 +77,7 @@ namespace PamerYukLibrary.DAO
                 password = dr.GetValue(1).ToString();
                 DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());
                 string noKTP = dr.GetValue(3).ToString();
-                Image foto = (Image)dr.GetValue(4); //Still confuse with this image data format
+                string foto = dr.GetValue(4).ToString(); //Still confuse with this image data format
                 int kota_id_fk = int.Parse(dr.GetValue(4).ToString());
 
                 //Kota
@@ -103,12 +103,6 @@ namespace PamerYukLibrary.DAO
             string command = "INSERT INTO `user` (`username`, `password`, `tglLahir`, `noKTP`,'foto','kota_id') values('" + user.Username + "','" + user.Password + "','" + user.TglLahir.ToString("yyyy-MM-dd") + "','" + user.NoKTP + "','" + user.Foto + "','" + user.Kota.Id + "');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
-        #endregion
-
-        #region ORGANISASI DAO
-        #endregion
-
-        #region KOTA DAO
         #endregion
     }
 }

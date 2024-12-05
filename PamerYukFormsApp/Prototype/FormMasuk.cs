@@ -12,9 +12,22 @@ namespace PamerYukFormsApp.Prototype
 {
     public partial class FormMasuk : Form
     {
+        FormUtama formUtama;
         public FormMasuk()
         {
             InitializeComponent();
+        }
+
+        private void FormMasuk_Load(object sender, EventArgs e)
+        {
+            formUtama = (FormUtama)this.Owner;
+        }
+
+        private void buttonDaftar_Click(object sender, EventArgs e)
+        {
+            FormDaftar formDaftar = new FormDaftar();
+            formDaftar.Owner = this;
+            formDaftar.ShowDialog();
         }
     }
 }

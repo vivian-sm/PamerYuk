@@ -40,10 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonDaftar = new System.Windows.Forms.Button();
             this.labelKota = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelFoto = new System.Windows.Forms.Panel();
             this.labelTangalLahir = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxKota = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBoxPassword
@@ -112,7 +112,6 @@
             this.label1.Size = new System.Drawing.Size(500, 54);
             this.label1.TabIndex = 14;
             this.label1.Text = "Konfirmasi Password : ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -152,6 +151,7 @@
             this.buttonDaftar.TabIndex = 19;
             this.buttonDaftar.Text = "Daftar";
             this.buttonDaftar.UseVisualStyleBackColor = true;
+            this.buttonDaftar.Click += new System.EventHandler(this.buttonDaftar_Click);
             // 
             // labelKota
             // 
@@ -162,15 +162,6 @@
             this.labelKota.Size = new System.Drawing.Size(156, 54);
             this.labelKota.TabIndex = 20;
             this.labelKota.Text = "Kota : ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox1.Location = new System.Drawing.Point(786, 430);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(800, 60);
-            this.textBox1.TabIndex = 21;
             // 
             // panelFoto
             // 
@@ -197,15 +188,24 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(800, 60);
             this.dateTimePicker1.TabIndex = 24;
             // 
+            // comboBoxKota
+            // 
+            this.comboBoxKota.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBoxKota.FormattingEnabled = true;
+            this.comboBoxKota.Location = new System.Drawing.Point(786, 433);
+            this.comboBoxKota.Name = "comboBoxKota";
+            this.comboBoxKota.Size = new System.Drawing.Size(800, 62);
+            this.comboBoxKota.TabIndex = 25;
+            // 
             // FormDaftar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1888, 992);
+            this.Controls.Add(this.comboBoxKota);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.labelTangalLahir);
             this.Controls.Add(this.panelFoto);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelKota);
             this.Controls.Add(this.buttonDaftar);
             this.Controls.Add(this.label3);
@@ -220,6 +220,7 @@
             this.Controls.Add(this.textBoxUsername);
             this.Name = "FormDaftar";
             this.Text = "Daftar";
+            this.Load += new System.EventHandler(this.FormDaftar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,9 +240,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonDaftar;
         private System.Windows.Forms.Label labelKota;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panelFoto;
         private System.Windows.Forms.Label labelTangalLahir;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBoxKota;
     }
 }

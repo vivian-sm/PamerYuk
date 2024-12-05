@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\DataAccessObject.cs" />
+    <Compile Include="DAO\DAO_Users.cs" />
     <Compile Include="Database\KoneksiDatabase.cs" />
     <Compile Include="Entity\KisahHidup.cs" />
     <Compile Include="Entity\User.cs" />

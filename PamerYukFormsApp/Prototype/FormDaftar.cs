@@ -17,7 +17,14 @@ namespace PamerYukFormsApp.Prototype
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonDaftar_Click(object sender, EventArgs e)
+        {
+            string username;
+            string password;
+            string noKTP;
+        }
+
+        private void FormDaftar_Load(object sender, EventArgs e)
         {
 
         }

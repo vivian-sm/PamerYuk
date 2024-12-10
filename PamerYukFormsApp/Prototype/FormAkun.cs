@@ -16,5 +16,14 @@ namespace PamerYukFormsApp.Prototype
         {
             InitializeComponent();
         }
+
+        private void FormAkun_Load(object sender, EventArgs e)
+        {
+            textBoxUsername.Text = FormUtama.service.Current_user.Username;
+            textBoxNoKTP.Text = FormUtama.service.Current_user.NoKTP;
+            textBoxTanggalLahir.Text = FormUtama.service.Current_user.TglLahir.ToString();
+            textBoxKota.Text = FormUtama.service.Current_user.Kota.Nama;
+
+        }
     }
 }

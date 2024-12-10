@@ -18,6 +18,7 @@ namespace PamerYukLibrary
         private string foto;
         private Kota kota;
         private List<KisahHidup> listKisahHidup;
+
         #endregion
 
         #region CONSTRUCTORS
@@ -31,99 +32,19 @@ namespace PamerYukLibrary
             this.Kota = kota;
             this.ListKisahHidup = Get_ListKisahHidup(); //Composition
         }
+
+        public User()
+        {
+        }
         #endregion
 
         #region PROPERTIES
-        public string Username
-        {
-            get => username;
-            set
-            {
-                if (value == "")
-                {
-                    throw new Exception("Username can't be empty");
-                }
-                else
-                {
-                    username = value;
-                }
-            }
-        }
-        public string Password
-        {
-            get => password;
-            set
-            {
-                if (value == "")
-                {
-                    throw new Exception("Password can't be empty");
-                }
-                else
-                {
-                    password = value;
-                }
-            }
-        }
-        public DateTime TglLahir
-        {
-            get => tglLahir;
-            set
-            {
-                if (value == null)
-                {
-                    throw new Exception("Birthdate can't be null");
-                }
-                else
-                {
-                    tglLahir = value;
-                }
-            }
-        }
-        public string NoKTP
-        {
-            get => noKTP;
-            set
-            {
-                if (value == "" || !int.TryParse(value, out int result))
-                {
-                    throw new Exception("Identification number can't be empty or non numbers");
-                }
-                else
-                {
-                    noKTP = value;
-                }
-            }
-        }
-        public string Foto
-        {
-            get => foto;
-            set
-            {
-                if (value == null)
-                {
-                    throw new Exception("Image can't be null");
-                }
-                else
-                {
-                    foto = value;
-                }
-            }
-        }
-        public Kota Kota 
-        { 
-            get => kota; 
-            set
-            {
-                if(value == null)
-                {
-                    throw new Exception("City can't be null");
-                }
-                else
-                {
-                    kota = value;
-                }
-            }
-        }
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
+        public DateTime TglLahir { get => tglLahir; set => tglLahir = value; }
+        public string NoKTP { get => noKTP; set => noKTP = value; }
+        public string Foto { get => foto; set => foto = value; }
+        public Kota Kota { get => kota; set => kota = value; }
         public List<KisahHidup> ListKisahHidup { get => listKisahHidup; set => listKisahHidup = value; }
         #endregion
 
@@ -132,9 +53,14 @@ namespace PamerYukLibrary
         {
             List<KisahHidup> list = new List<KisahHidup>();
             //Select List from Database
-            list = DAO_Users.Select_ListKisahHidup_Users(this.Username);
+            list = DAO_KisahHidup.Select_ListKisahHidup(this.Username);
       
             return list;
+        }
+
+        public string Check_Password()
+        {
+            return this.Password;
         }
         #endregion
     }

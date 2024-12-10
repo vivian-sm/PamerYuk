@@ -16,7 +16,34 @@ namespace PamerYukLibrary
             this.Nama = nama;
         }
 
-        public int Id { get => id; set => id = value; }
-        public string Nama { get => nama; set => nama = value; }
+        public int Id 
+        { get => id; 
+            set
+            {
+                if(value<0)
+                {
+                    throw new Exception("ID can't be lower than 0");
+                }
+                else
+                {
+                    id = value;
+                }
+            }
+        }
+        public string Nama 
+        { 
+            get => nama; 
+            set
+            {
+                if(value=="")
+                {
+                    throw new Exception("Kota name can't be empty");
+                }
+                else
+                {
+                    nama = value;
+                }
+            }
+        }
     }
 }

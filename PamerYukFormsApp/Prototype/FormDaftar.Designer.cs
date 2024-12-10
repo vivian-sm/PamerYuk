@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDaftar));
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
@@ -147,7 +148,7 @@
             this.buttonDaftar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDaftar.Location = new System.Drawing.Point(1384, 898);
             this.buttonDaftar.Name = "buttonDaftar";
-            this.buttonDaftar.Size = new System.Drawing.Size(202, 60);
+            this.buttonDaftar.Size = new System.Drawing.Size(219, 82);
             this.buttonDaftar.TabIndex = 19;
             this.buttonDaftar.Text = "Daftar";
             this.buttonDaftar.UseVisualStyleBackColor = true;
@@ -165,6 +166,10 @@
             // 
             // panelFoto
             // 
+            this.panelFoto.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelFoto.BackgroundImage")));
+            this.panelFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelFoto.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelFoto.Location = new System.Drawing.Point(786, 570);
             this.panelFoto.Name = "panelFoto";
             this.panelFoto.Size = new System.Drawing.Size(300, 300);
@@ -201,6 +206,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1888, 992);
             this.Controls.Add(this.comboBoxKota);
             this.Controls.Add(this.dateTimePicker1);
@@ -220,6 +227,7 @@
             this.Controls.Add(this.textBoxUsername);
             this.Name = "FormDaftar";
             this.Text = "Daftar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormDaftar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

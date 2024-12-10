@@ -9,19 +9,19 @@ namespace PamerYukLibrary
 {
     public class Teman
     {
-        private User user;
+        private string username;
         private DateTime tglBerteman;
-        private StatusPertemanan status;
+        private string status;
 
-        public Teman(User user, DateTime tglBerteman, StatusPertemanan status)
+        public Teman(string username, DateTime tglBerteman, string status)
         {
-            this.User = user;
+            this.Username = username;
             this.TglBerteman = tglBerteman;
             this.Status = status;
         }
 
-        public User User { get => user; set => user = value; }
+        public string Username { get => username; set => username = value; }
         public DateTime TglBerteman { get => tglBerteman; set => tglBerteman = value; }
-        public StatusPertemanan Status { get => status; set => status = value; }
+        public string Status { get => status; set => status = value; }
     }
 }

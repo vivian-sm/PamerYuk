@@ -18,57 +18,12 @@ namespace PamerYukLibrary.DAO
 
         #region USERS DAO
         //Users
-
-        //For a user kisah hidup
-        public static List<KisahHidup> Select_ListKisahHidup_Users(string username)
-        {
-            string perintah;
-            perintah = "select * from kisahhidup kh	inner join organisasi o ON o.ID = kh.Organisasi_id inner join Kota K on o.Kota_Id = k.id where kh.username ='" + username + "';";
-
-            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
-            List<KisahHidup> listData = new List<KisahHidup>();
-
-            while (dr.Read() == true)
-            {
-                //Taken from database
-                //KisahHidup
-                int organisasi_ID_fk = int.Parse(dr.GetValue(0).ToString());
-                string username_fk = dr.GetValue(1).ToString();
-                int thawal = int.Parse(dr.GetValue(2).ToString());
-                int thakhir = int.Parse(dr.GetValue(3).ToString());
-                string deskripsi = dr.GetValue(4).ToString();
-
-                //Organisasi 
-                int id_organisasi = int.Parse(dr.GetValue(5).ToString());
-                string nama_organisasi = dr.GetValue(6).ToString();
-                int kota_id_fk = int.Parse(dr.GetValue(7).ToString());
-
-                //Kota
-                int kota_id = int.Parse(dr.GetValue(8).ToString());
-                string nama_Kota = dr.GetValue(9).ToString();
-
-                //Create Kota
-                Kota newKota = new Kota(kota_id, nama_Kota);
-
-                //Create Organisasi
-                Organisasi newOrganisasi = new Organisasi(id_organisasi, nama_organisasi, newKota);
-
-                //Create Kisah Hidup
-                KisahHidup newKisah = new KisahHidup(newOrganisasi, thawal, thakhir, deskripsi);
-
-                //tambahkan ke list
-                listData.Add(newKisah);
-            }
-            //kirim kembali list ke pemanggilnya
-            return listData;
-        }
-
         public static User User_Log_In(string username, string password)
         {
-            string perintah;
-            perintah = "select * from user u inner join kota k on u.kota_id = k.id where username ='" + username + "' and password ='" + password + "';";
+            string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "' and password ='" + password + "';";
 
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+
             User user;
             if (dr.Read())
             {
@@ -78,17 +33,18 @@ namespace PamerYukLibrary.DAO
                 DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());
                 string noKTP = dr.GetValue(3).ToString();
                 string foto = dr.GetValue(4).ToString(); //Still confuse with this image data format
-                int kota_id_fk = int.Parse(dr.GetValue(4).ToString());
+                int kota_id_fk = int.Parse(dr.GetValue(5).ToString());
 
                 //Kota
-                int kota_id = int.Parse(dr.GetValue(4).ToString());
-                string nama = dr.GetValue(4).ToString();
+                int kota_id = int.Parse(dr.GetValue(6).ToString());
+                string nama = dr.GetValue(7).ToString();
 
                 //Create Kota
                 Kota newKota = new Kota(kota_id, nama);
 
                 //Create User
                 user = new User(username, password, tgllahir, noKTP, foto, newKota);
+                Console.WriteLine("Data user dari database berhasil diambil");
             }
             else
             {
@@ -97,10 +53,9 @@ namespace PamerYukLibrary.DAO
             return user;
         }
 
-        public static void User_Daftar(User user)
+        public static void User_Daftar(string username, string password, DateTime tglLahir, string noKTP, string foto, Kota kota)
         {
-            //Still confuse with this image data format
-            string command = "INSERT INTO `user` (`username`, `password`, `tglLahir`, `noKTP`,'foto','kota_id') values('" + user.Username + "','" + user.Password + "','" + user.TglLahir.ToString("yyyy-MM-dd") + "','" + user.NoKTP + "','" + user.Foto + "','" + user.Kota.Id + "');";
+            string command = "INSERT INTO `pameryuk`.`user` (`username`, `password`, `tglLahir`, `noKTP`, `foto`, `Kota_id`) VALUES('"+username+"', '"+password+"', '"+tglLahir.ToString("yyyy-MM-dd")+"', '"+noKTP+"', '"+foto+"', '"+kota.Id+"');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
         #endregion

@@ -31,17 +31,17 @@
             this.labelTangalLahir = new System.Windows.Forms.Label();
             this.labelKota = new System.Windows.Forms.Label();
             this.buttonInput = new System.Windows.Forms.Button();
-            this.textBoxNoKTP = new System.Windows.Forms.TextBox();
+            this.textBoxDeskripsi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelFormDaftar = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.numericUpDownTahunAkhir = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTahunAwal = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxOrganisasi = new System.Windows.Forms.ComboBox();
+            this.buttonTambah = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTahunAkhir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTahunAwal)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTangalLahir
@@ -73,14 +73,15 @@
             this.buttonInput.TabIndex = 35;
             this.buttonInput.Text = "Input Kisah";
             this.buttonInput.UseVisualStyleBackColor = true;
+            this.buttonInput.Click += new System.EventHandler(this.buttonInput_Click);
             // 
-            // textBoxNoKTP
+            // textBoxDeskripsi
             // 
-            this.textBoxNoKTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBoxNoKTP.Location = new System.Drawing.Point(806, 359);
-            this.textBoxNoKTP.Name = "textBoxNoKTP";
-            this.textBoxNoKTP.Size = new System.Drawing.Size(800, 60);
-            this.textBoxNoKTP.TabIndex = 33;
+            this.textBoxDeskripsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBoxDeskripsi.Location = new System.Drawing.Point(806, 359);
+            this.textBoxDeskripsi.Name = "textBoxDeskripsi";
+            this.textBoxDeskripsi.Size = new System.Drawing.Size(800, 60);
+            this.textBoxDeskripsi.TabIndex = 33;
             // 
             // label2
             // 
@@ -91,7 +92,6 @@
             this.label2.Size = new System.Drawing.Size(242, 54);
             this.label2.TabIndex = 32;
             this.label2.Text = "Deskripsi :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelFormDaftar
             // 
@@ -113,73 +113,72 @@
             this.labelUsername.Size = new System.Drawing.Size(285, 54);
             this.labelUsername.TabIndex = 26;
             this.labelUsername.Text = "Organisasi : ";
-            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
             // 
-            // numericUpDown1
+            // numericUpDownTahunAkhir
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDown1.Location = new System.Drawing.Point(806, 658);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            2025,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1900,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(310, 60);
-            this.numericUpDown1.TabIndex = 40;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            2024,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDown2.Location = new System.Drawing.Point(806, 516);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDownTahunAkhir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.numericUpDownTahunAkhir.Location = new System.Drawing.Point(806, 658);
+            this.numericUpDownTahunAkhir.Maximum = new decimal(new int[] {
             2100,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericUpDownTahunAkhir.Minimum = new decimal(new int[] {
             1900,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(310, 60);
-            this.numericUpDown2.TabIndex = 41;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDownTahunAkhir.Name = "numericUpDownTahunAkhir";
+            this.numericUpDownTahunAkhir.Size = new System.Drawing.Size(310, 60);
+            this.numericUpDownTahunAkhir.TabIndex = 40;
+            this.numericUpDownTahunAkhir.Value = new decimal(new int[] {
             2024,
             0,
             0,
             0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // comboBox1
+            // numericUpDownTahunAwal
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(806, 158);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(800, 62);
-            this.comboBox1.TabIndex = 42;
+            this.numericUpDownTahunAwal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.numericUpDownTahunAwal.Location = new System.Drawing.Point(806, 516);
+            this.numericUpDownTahunAwal.Maximum = new decimal(new int[] {
+            2100,
+            0,
+            0,
+            0});
+            this.numericUpDownTahunAwal.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            this.numericUpDownTahunAwal.Name = "numericUpDownTahunAwal";
+            this.numericUpDownTahunAwal.Size = new System.Drawing.Size(310, 60);
+            this.numericUpDownTahunAwal.TabIndex = 41;
+            this.numericUpDownTahunAwal.Value = new decimal(new int[] {
+            2024,
+            0,
+            0,
+            0});
             // 
-            // button1
+            // comboBoxOrganisasi
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Location = new System.Drawing.Point(1396, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 62);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "Tambah";
-            this.button1.UseVisualStyleBackColor = true;
+            this.comboBoxOrganisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBoxOrganisasi.FormattingEnabled = true;
+            this.comboBoxOrganisasi.Location = new System.Drawing.Point(806, 158);
+            this.comboBoxOrganisasi.Name = "comboBoxOrganisasi";
+            this.comboBoxOrganisasi.Size = new System.Drawing.Size(800, 62);
+            this.comboBoxOrganisasi.TabIndex = 42;
+            // 
+            // buttonTambah
+            // 
+            this.buttonTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonTambah.Location = new System.Drawing.Point(1396, 244);
+            this.buttonTambah.Name = "buttonTambah";
+            this.buttonTambah.Size = new System.Drawing.Size(210, 62);
+            this.buttonTambah.TabIndex = 43;
+            this.buttonTambah.Text = "Tambah";
+            this.buttonTambah.UseVisualStyleBackColor = true;
+            this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
             // 
             // label1
             // 
@@ -190,7 +189,6 @@
             this.label1.Size = new System.Drawing.Size(596, 54);
             this.label1.TabIndex = 44;
             this.label1.Text = "Tidak ada organisasi anda?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormKisahHidup
             // 
@@ -198,21 +196,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1888, 992);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.buttonTambah);
+            this.Controls.Add(this.comboBoxOrganisasi);
+            this.Controls.Add(this.numericUpDownTahunAwal);
+            this.Controls.Add(this.numericUpDownTahunAkhir);
             this.Controls.Add(this.labelTangalLahir);
             this.Controls.Add(this.labelKota);
             this.Controls.Add(this.buttonInput);
-            this.Controls.Add(this.textBoxNoKTP);
+            this.Controls.Add(this.textBoxDeskripsi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelFormDaftar);
             this.Controls.Add(this.labelUsername);
             this.Name = "FormKisahHidup";
             this.Text = "FormKisahHidup";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormKisahHidup_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTahunAkhir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTahunAwal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,14 +223,14 @@
         private System.Windows.Forms.Label labelTangalLahir;
         private System.Windows.Forms.Label labelKota;
         private System.Windows.Forms.Button buttonInput;
-        private System.Windows.Forms.TextBox textBoxNoKTP;
+        private System.Windows.Forms.TextBox textBoxDeskripsi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelFormDaftar;
         private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numericUpDownTahunAkhir;
+        private System.Windows.Forms.NumericUpDown numericUpDownTahunAwal;
+        private System.Windows.Forms.ComboBox comboBoxOrganisasi;
+        private System.Windows.Forms.Button buttonTambah;
         private System.Windows.Forms.Label label1;
     }
 }

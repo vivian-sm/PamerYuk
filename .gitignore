@@ -1,48 +1,5 @@
-# Ignore .NET Framework binaries
-bin/
-obj/
+ECHO is on.
 
-# Ignore Visual Studio files
 .vs/
-*.user
-*.suo
-*.sln
-*.cache
-
-# Ignore application settings
-app.config
-web.config
-
-# Ignore build results
-*.dll
-*.exe
-*.pdb
-
-# Ignore log files
-*.log
-
-# Ignore temporary files
-*.tmp
-*.temp
-
-# Ignore backup files
-*.bak
-
-# Ignore packages and dependencies
-packages/
-*.nuget
-
-# Ignore MySQL library binaries and data
-mysql.data/
-mysql.data.entity/
-mysql.data.entityframework/
-
-# Ignore user-specific files
-*.swp
-*.bak
-*.db
-*.DS_Store
-*.md
-*.mwb
-*.MySQL
-*.sql
+UAS_DB_PamerYuk/bin/Debug/
+UAS_DB_PamerYuk/obj/Debug/

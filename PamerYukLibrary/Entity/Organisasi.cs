@@ -12,9 +12,15 @@ namespace PamerYukLibrary
         private string nama;
         private Kota kota;
 
-        public Organisasi(int id, string nama, Kota kota)
+        public Organisasi(int id, string nama, Kota kota) //From DB
         {
             this.Id = id;
+            this.Nama = nama;
+            this.Kota = kota;
+        }
+
+        public Organisasi(string nama, Kota kota) //New Insert
+        {
             this.Nama = nama;
             this.Kota = kota;
         }

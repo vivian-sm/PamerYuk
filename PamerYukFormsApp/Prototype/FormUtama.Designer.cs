@@ -32,6 +32,8 @@
             this.cariTemanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.percakapanSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kontenSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profilSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tambahKisahHidupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,38 +44,56 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cariTemanToolStripMenuItem,
             this.percakapanSayaToolStripMenuItem,
-            this.kontenSayaToolStripMenuItem});
+            this.kontenSayaToolStripMenuItem,
+            this.profilSayaToolStripMenuItem,
+            this.tambahKisahHidupToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1416, 42);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1888, 49);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // cariTemanToolStripMenuItem
             // 
             this.cariTemanToolStripMenuItem.Name = "cariTemanToolStripMenuItem";
-            this.cariTemanToolStripMenuItem.Size = new System.Drawing.Size(153, 38);
+            this.cariTemanToolStripMenuItem.Size = new System.Drawing.Size(188, 45);
             this.cariTemanToolStripMenuItem.Text = "Cari Teman";
             // 
             // percakapanSayaToolStripMenuItem
             // 
             this.percakapanSayaToolStripMenuItem.Name = "percakapanSayaToolStripMenuItem";
-            this.percakapanSayaToolStripMenuItem.Size = new System.Drawing.Size(210, 38);
+            this.percakapanSayaToolStripMenuItem.Size = new System.Drawing.Size(262, 45);
             this.percakapanSayaToolStripMenuItem.Text = "Percakapan Saya";
             // 
             // kontenSayaToolStripMenuItem
             // 
             this.kontenSayaToolStripMenuItem.Name = "kontenSayaToolStripMenuItem";
-            this.kontenSayaToolStripMenuItem.Size = new System.Drawing.Size(166, 38);
+            this.kontenSayaToolStripMenuItem.Size = new System.Drawing.Size(205, 45);
             this.kontenSayaToolStripMenuItem.Text = "Konten Saya";
+            // 
+            // profilSayaToolStripMenuItem
+            // 
+            this.profilSayaToolStripMenuItem.Name = "profilSayaToolStripMenuItem";
+            this.profilSayaToolStripMenuItem.Size = new System.Drawing.Size(179, 45);
+            this.profilSayaToolStripMenuItem.Text = "Profil Saya";
+            this.profilSayaToolStripMenuItem.Click += new System.EventHandler(this.profilSayaToolStripMenuItem_Click);
+            // 
+            // tambahKisahHidupToolStripMenuItem
+            // 
+            this.tambahKisahHidupToolStripMenuItem.Name = "tambahKisahHidupToolStripMenuItem";
+            this.tambahKisahHidupToolStripMenuItem.Size = new System.Drawing.Size(296, 45);
+            this.tambahKisahHidupToolStripMenuItem.Text = "TambahKisahHidup";
+            this.tambahKisahHidupToolStripMenuItem.Click += new System.EventHandler(this.tambahKisahHidupToolStripMenuItem_Click);
             // 
             // FormUtama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 800);
+            this.ClientSize = new System.Drawing.Size(1888, 992);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormUtama";
             this.Text = "FormUtama";
             this.Load += new System.EventHandler(this.FormUtama_Load);
@@ -90,6 +110,8 @@
         private System.Windows.Forms.ToolStripMenuItem cariTemanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem percakapanSayaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kontenSayaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profilSayaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tambahKisahHidupToolStripMenuItem;
     }
 }
 

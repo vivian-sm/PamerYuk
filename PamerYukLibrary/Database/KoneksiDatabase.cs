@@ -25,24 +25,14 @@ namespace PamerYukLibrary.Database
             this.Koneksi.ConnectionString = ConnString;
             Hubungkan_Database();
         }
-
         public KoneksiDatabase()
         {
-            Configuration myConf = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            ConfigurationSectionGroup userSetting = myConf.SectionGroups["userSettings"];
-            var settingSection = userSetting.Sections["FormApps.kuis"] as ClientSettingsSection;
-            string server = settingSection.Settings.Get("Server").Value.ValueXml.InnerText;
-            string database = settingSection.Settings.Get("Database").Value.ValueXml.InnerText;
-            string user = settingSection.Settings.Get("User").Value.ValueXml.InnerText;
-            string password = settingSection.Settings.Get("Password").Value.ValueXml.InnerText;
-
-            string ConnString = "Server=" + server + ";Database=" + database + ";Uid=" + user + ";Pwd=" + password + ";";
-
+            string ConnString = "Server= localhost;Database=pameryuk;Uid=root;Pwd=;";
             Koneksi = new MySqlConnection();
-            Koneksi.ConnectionString = ConnString;
-
+            this.Koneksi.ConnectionString = ConnString;
             Hubungkan_Database();
         }
+
         #endregion
 
         #region PROPERTIES

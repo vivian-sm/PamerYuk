@@ -16,3 +16,8 @@ C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYuk
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKisahHidup.resources
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormMasuk.resources
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahOrganisasi.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkun.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkunTeman.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKonten.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahKonten.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTeman.resources

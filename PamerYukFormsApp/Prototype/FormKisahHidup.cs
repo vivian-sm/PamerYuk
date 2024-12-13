@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PamerYukLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,24 +18,28 @@ namespace PamerYukFormsApp.Prototype
             InitializeComponent();
         }
 
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        private void buttonTambah_Click(object sender, EventArgs e)
         {
-
+            FormTambahOrganisasi frm = new FormTambahOrganisasi();
+            frm.Owner = this;
+            frm.ShowDialog();
+            FormKisahHidup_Load(sender, e);
         }
 
-        private void labelUsername_Click(object sender, EventArgs e)
+        private void buttonInput_Click(object sender, EventArgs e)
         {
-
+            Organisasi selected_organisasi = (Organisasi)comboBoxOrganisasi.SelectedItem;
+            string deskripsi = textBoxDeskripsi.Text;
+            int tahun_awal = (int)numericUpDownTahunAwal.Value;
+            int tahun_akhir = (int)numericUpDownTahunAkhir.Value;
+            KisahHidup inputKisah = new KisahHidup (selected_organisasi,tahun_awal, tahun_akhir,deskripsi);
+            FormUtama.service.Tambah_KisahHidup(inputKisah);
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void FormKisahHidup_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            comboBoxOrganisasi.DataSource = FormUtama.service.ListOrganisasi;
+            comboBoxOrganisasi.DisplayMember = "Nama";
         }
     }
 }

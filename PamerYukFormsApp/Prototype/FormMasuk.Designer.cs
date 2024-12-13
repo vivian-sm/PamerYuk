@@ -55,6 +55,7 @@
             this.buttonMasuk.TabIndex = 2;
             this.buttonMasuk.Text = "Log In";
             this.buttonMasuk.UseVisualStyleBackColor = true;
+            this.buttonMasuk.Click += new System.EventHandler(this.buttonMasuk_Click);
             // 
             // buttonDaftar
             // 
@@ -65,6 +66,7 @@
             this.buttonDaftar.TabIndex = 3;
             this.buttonDaftar.Text = "Daftar";
             this.buttonDaftar.UseVisualStyleBackColor = true;
+            this.buttonDaftar.Click += new System.EventHandler(this.buttonDaftar_Click);
             // 
             // labelUsername
             // 
@@ -120,6 +122,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1888, 992);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelFormMasuk);
@@ -131,6 +135,8 @@
             this.Controls.Add(this.textBoxUsername);
             this.Name = "FormMasuk";
             this.Text = "Log In";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMasuk_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

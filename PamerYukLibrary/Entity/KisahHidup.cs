@@ -25,5 +25,12 @@ namespace PamerYukLibrary
         public int Thawal { get => thawal; set => thawal = value; }
         public int Thakhir { get => thakhir; set => thakhir = value; }
         public string Deskripsi { get => deskripsi; set => deskripsi = value; }
+
+        public override string ToString()
+        {
+            string text = "";
+            text = this.Organisasi.Nama + " dari tahun " + this.thawal + " hingga " + this.thakhir + "\n";
+            return text;
+        }
     }
 }

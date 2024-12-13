@@ -23,6 +23,7 @@ namespace PamerYukFormsApp.Prototype
             FormTambahOrganisasi frm = new FormTambahOrganisasi();
             frm.Owner = this;
             frm.ShowDialog();
+            FormKisahHidup_Load(sender, e);
         }
 
         private void buttonInput_Click(object sender, EventArgs e)
@@ -31,6 +32,8 @@ namespace PamerYukFormsApp.Prototype
             string deskripsi = textBoxDeskripsi.Text;
             int tahun_awal = (int)numericUpDownTahunAwal.Value;
             int tahun_akhir = (int)numericUpDownTahunAkhir.Value;
+            KisahHidup inputKisah = new KisahHidup (selected_organisasi,tahun_awal, tahun_akhir,deskripsi);
+            FormUtama.service.Tambah_KisahHidup(inputKisah);
         }
 
         private void FormKisahHidup_Load(object sender, EventArgs e)

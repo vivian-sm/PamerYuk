@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using PamerYukLibrary.Database;
 using System;
 using System.Collections.Generic;
@@ -42,8 +43,21 @@ namespace PamerYukLibrary.DAO
 
         public static void Insert_Organisasi(Organisasi organisasi)
         {
-            string command = "INSERT INTO organisasi (`id`, `nama`, `Kota_id`) VALUES ('"+organisasi.Id+"', '"+organisasi.Nama+"', '"+organisasi.Kota.Id+"');";
+            string command = "INSERT INTO organisasi (`id`, `nama`, `Kota_id`) VALUES ('"+ new_id_organisasi().ToString() +"', '"+organisasi.Nama+"', '"+organisasi.Kota.Id+"');";
             KoneksiDatabase.DatabaseDMLCommand(command);
+        }
+
+        private static int new_id_organisasi()
+        {
+            string command = "SELECT o.id FROM organisasi o ORDER BY o.id DESC LIMIT 1;";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);
+            int result = -1;
+            if (dr.Read())
+            {
+                result = int.Parse(dr.GetValue(0).ToString());
+                result++;
+            }
+            return result;
         }
     }
 }

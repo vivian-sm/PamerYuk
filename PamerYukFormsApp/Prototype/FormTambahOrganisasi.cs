@@ -22,7 +22,9 @@ namespace PamerYukFormsApp.Prototype
         {
             string nama = textBoxNama.Text;
             Kota kota = (Kota)comboBoxKota.SelectedItem;
-            
+            Organisasi newOrganisasi = new Organisasi (nama, kota);
+            FormUtama.service.Tambah_Organisasi(newOrganisasi);
+            this.Close();
         }
 
         private void FormTambahOrganisasi_Load(object sender, EventArgs e)

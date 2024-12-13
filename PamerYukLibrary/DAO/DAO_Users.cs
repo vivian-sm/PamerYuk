@@ -26,7 +26,7 @@ namespace PamerYukLibrary.DAO
 
             User user;
             if (dr.Read())
-            {
+            { 
                 //User
                 username = dr.GetValue(0).ToString();
                 password = dr.GetValue(1).ToString();

@@ -51,7 +51,7 @@ namespace PamerYukFormsApp
             Form f = Application.OpenForms["FormAkun"];
             if (f == null)
             {
-                FormKisahHidup frm = new FormKisahHidup();
+                FormAkun frm = new FormAkun();
                 frm.MdiParent = this;
                 frm.Show();
             }

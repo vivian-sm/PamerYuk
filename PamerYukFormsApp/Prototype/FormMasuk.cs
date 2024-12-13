@@ -40,11 +40,18 @@ namespace PamerYukFormsApp.Prototype
 
         private void buttonMasuk_Click(object sender, EventArgs e)
         {
-            string username = textBoxUsername.Text;
-            string password = textBoxPassword.Text;
-            Console.WriteLine(username + ":" + password);
-            FormUtama.service.LogIn(username, password);
-            this.Close();
+            try
+            {
+                string username = textBoxUsername.Text;
+                string password = textBoxPassword.Text;
+                Console.WriteLine(username + ":" + password);
+                FormUtama.service.LogIn(username, password);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

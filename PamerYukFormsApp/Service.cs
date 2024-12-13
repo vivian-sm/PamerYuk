@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PamerYukLibrary;
 using PamerYukLibrary.DAO;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
@@ -23,7 +22,7 @@ namespace PamerYukFormsApp
         public Service()
         {
             this.ListOrganisasi = DAO_Organisasi.Select_Organisasi();
-            this.ListKota = DAO_Kota.Select_ListKota(); //Harusnya dari repository (Untuk sementara gini dulu)
+            this.ListKota = DAO_Kota.Select_ListKota();
         }
         #endregion
 
@@ -34,6 +33,11 @@ namespace PamerYukFormsApp
         public List<Organisasi> ListOrganisasi { get => listOrganisasi; set => listOrganisasi = value; }
         #endregion
 
+        #region ONLOAD
+        public void OnLoad()
+        {
+        }
+        #endregion
         #region METHOD (USER) 
         //For User
         public void LogIn(string username, string password)
@@ -51,9 +55,16 @@ namespace PamerYukFormsApp
         #endregion
         #region METHOD (KISAH HIDUP)
         //For Kisah Hidup
+        public void Tambah_KisahHidup(KisahHidup newKisahHidup)
+        {
+            DAO_KisahHidup.Insert_KisahHidup(newKisahHidup, this.Current_user);
+        }
 
-
-
+        public void Tambah_Organisasi(Organisasi newOrganisasi)
+        {
+            DAO_Organisasi.Insert_Organisasi(newOrganisasi);
+            this.ListOrganisasi = DAO_Organisasi.Select_Organisasi(); //Re-New the list
+        }
 
         #endregion
 

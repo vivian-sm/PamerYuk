@@ -49,8 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DAO_KisahHidup.cs" />
+    <Compile Include="DAO\DAO_Komen.cs" />
+    <Compile Include="DAO\DAO_Konten.cs" />
     <Compile Include="DAO\DAO_Kota.cs" />
     <Compile Include="DAO\DAO_Organisasi.cs" />
+    <Compile Include="DAO\DAO_Tag.cs" />
     <Compile Include="DAO\DAO_Teman.cs" />
     <Compile Include="DAO\DAO_Users.cs" />
     <Compile Include="Database\KoneksiDatabase.cs" />
@@ -64,9 +67,6 @@
     <Compile Include="Entity\Teman.cs" />
     <Compile Include="Repositories\Repositories.cs" />
     <Compile Include="Value\StatusPertemanan.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PamerYukLibrary.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

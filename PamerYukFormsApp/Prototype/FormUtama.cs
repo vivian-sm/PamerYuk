@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PamerYukFormsApp.Prototype;
-using PamerYukLibrary;
 
 //PamerYuk Library
 using PamerYukLibrary.Database;
@@ -27,7 +26,6 @@ namespace PamerYukFormsApp
         {
 
             this.IsMdiContainer = true;
-            
             try
             {
                 KoneksiDatabase connectToDatabase = new KoneksiDatabase(PamerYuk.Default.Server, PamerYuk.Default.Database, PamerYuk.Default.User, PamerYuk.Default.Password);
@@ -44,6 +42,8 @@ namespace PamerYukFormsApp
             {
                 Application.Exit();
             }
+
+            service.OnLoad();
         }
 
         private void profilSayaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,8 +57,8 @@ namespace PamerYukFormsApp
             }
             else
             {
-                f.Show();
                 f.BringToFront();
+                f.MaximizeBox = true;
             }
         }
 
@@ -74,8 +74,109 @@ namespace PamerYukFormsApp
             }
             else
             {
-                f.Show();
                 f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void cariTemanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms["FormTeman"];
+            if (f == null)
+            {
+                FormTeman frm = new FormTeman();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void kontenSayaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            Form f = Application.OpenForms["FormDaftarKonten"];
+            if (f == null)
+            {
+                FormDaftarKonten frm = new FormDaftarKonten(service.Current_user);
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void tambahKontenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form f = Application.OpenForms["FormTambahKonten"];
+            if (f == null)
+            {
+                FormTambahKonten frm = new FormTambahKonten();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void daftarKontenSayaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            Form f = Application.OpenForms["FormDaftarKonten"];
+            if (f == null)
+            {
+                FormTambahKonten frm = new FormTambahKonten();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void daftarTemanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms["FormDaftarTeman"];
+            if (f == null)
+            {
+                FormDaftarTeman frm = new FormDaftarTeman();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
+            }
+        }
+
+        private void requestPertemananToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms["FormRequestPertemanan"];
+            if (f == null)
+            {
+                FormRequestPertemanan frm = new FormRequestPertemanan();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            else
+            {
+                f.BringToFront();
+                f.MaximizeBox = true;
             }
         }
     }

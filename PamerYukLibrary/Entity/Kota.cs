@@ -45,5 +45,10 @@ namespace PamerYukLibrary
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return this.Nama;
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace PamerYukLibrary
         private string foto;
         private Kota kota;
         private List<KisahHidup> listKisahHidup;
+        private List<Konten> listKonten;
 
         #endregion
 
@@ -30,11 +31,20 @@ namespace PamerYukLibrary
             this.NoKTP = noKTP;
             this.Foto = foto;
             this.Kota = kota;
-            this.ListKisahHidup = Get_ListKisahHidup(); //Composition
+            this.ListKonten = new List<Konten>();
+            this.ListKisahHidup = new List<KisahHidup>();
         }
 
-        public User()
+        public User(string username, DateTime tglLahir, string noKTP, string foto, Kota kota)
         {
+            this.Username = username;
+            this.Password = null;
+            this.TglLahir = tglLahir;
+            this.NoKTP = noKTP;
+            this.Foto = foto;
+            this.Kota = kota;
+            this.ListKonten = new List<Konten>();
+            this.ListKisahHidup = new List<KisahHidup>();
         }
         #endregion
 
@@ -46,22 +56,11 @@ namespace PamerYukLibrary
         public string Foto { get => foto; set => foto = value; }
         public Kota Kota { get => kota; set => kota = value; }
         public List<KisahHidup> ListKisahHidup { get => listKisahHidup; set => listKisahHidup = value; }
+
+        public List<Konten> ListKonten { get => listKonten; set => listKonten = value; }
         #endregion
 
         #region METHOD
-        private List<KisahHidup> Get_ListKisahHidup()
-        {
-            List<KisahHidup> list = new List<KisahHidup>();
-            //Select List from Database
-            list = DAO_KisahHidup.Select_ListKisahHidup(this.Username);
-      
-            return list;
-        }
-
-        public string Check_Password()
-        {
-            return this.Password;
-        }
         #endregion
     }
 }

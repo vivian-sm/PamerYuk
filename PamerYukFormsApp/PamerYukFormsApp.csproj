@@ -72,6 +72,18 @@
     <Compile Include="Prototype\FormDaftar.Designer.cs">
       <DependentUpon>FormDaftar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype\FormDaftarKonten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormDaftarKonten.Designer.cs">
+      <DependentUpon>FormDaftarKonten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormDaftarTeman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormDaftarTeman.Designer.cs">
+      <DependentUpon>FormDaftarTeman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype\FormKisahHidup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </Compile>
     <Compile Include="Prototype\FormMasuk.Designer.cs">
       <DependentUpon>FormMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype\FormRequestPertemanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype\FormRequestPertemanan.Designer.cs">
+      <DependentUpon>FormRequestPertemanan.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype\FormTambahKonten.cs">
       <SubType>Form</SubType>
@@ -126,6 +144,12 @@
     <EmbeddedResource Include="Prototype\FormDaftar.resx">
       <DependentUpon>FormDaftar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormDaftarKonten.resx">
+      <DependentUpon>FormDaftarKonten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormDaftarTeman.resx">
+      <DependentUpon>FormDaftarTeman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormKisahHidup.resx">
       <DependentUpon>FormKisahHidup.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormMasuk.resx">
       <DependentUpon>FormMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype\FormRequestPertemanan.resx">
+      <DependentUpon>FormRequestPertemanan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormTambahKonten.resx">
       <DependentUpon>FormTambahKonten.cs</DependentUpon>

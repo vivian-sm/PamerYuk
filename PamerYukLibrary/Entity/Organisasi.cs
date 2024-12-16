@@ -24,7 +24,12 @@ namespace PamerYukLibrary
             this.Nama = nama;
             this.Kota = kota;
         }
-
+        public Organisasi()
+        {
+            this.Id = -1;
+            this.Nama = "";
+            this.Kota = null;
+        }
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
         public Kota Kota { get => kota; set => kota = value; }

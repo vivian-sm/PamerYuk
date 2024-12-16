@@ -10,22 +10,30 @@ namespace PamerYukLibrary
         private int id;
         private string komentar;
         private DateTime tgl;
-        private User user;
-        private Konten konten;
+        private string user;
 
-        public Komen(int id, string komentar, DateTime tgl, User user, Konten konten)
+        public Komen(int id, string komentar, DateTime tgl, string user)
         {
             this.Id = id;
             this.Komentar = komentar;
             this.Tgl = tgl;
             this.User = user;
-            this.Konten = konten;
+        }
+        public Komen(string komentar, DateTime time, string user) //New Comment
+        {
+            this.Komentar = komentar;
+            this.Tgl = time;
+            this.User = user;
         }
 
         public int Id { get => id; set => id = value; }
         public string Komentar { get => komentar; set => komentar = value; }
         public DateTime Tgl { get => tgl; set => tgl = value; }
-        public User User { get => user; set => user = value; }
-        public Konten Konten { get => konten; set => konten = value; }
+        public string User { get => user; set => user = value; }
+
+        public override string ToString()
+        {
+            return this.tgl + " -> "+ this.User + " : " + this.Komentar;
+        }
     }
 }

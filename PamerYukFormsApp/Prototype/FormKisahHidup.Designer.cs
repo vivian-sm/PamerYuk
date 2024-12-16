@@ -70,7 +70,7 @@
             // 
             this.buttonInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonInput.Location = new System.Drawing.Point(625, 381);
-            this.buttonInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonInput.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInput.Name = "buttonInput";
             this.buttonInput.Size = new System.Drawing.Size(178, 39);
             this.buttonInput.TabIndex = 35;
@@ -82,7 +82,7 @@
             // 
             this.textBoxDeskripsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxDeskripsi.Location = new System.Drawing.Point(403, 185);
-            this.textBoxDeskripsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDeskripsi.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDeskripsi.Name = "textBoxDeskripsi";
             this.textBoxDeskripsi.Size = new System.Drawing.Size(402, 34);
             this.textBoxDeskripsi.TabIndex = 33;
@@ -125,7 +125,7 @@
             // 
             this.numericUpDownTahunAkhir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownTahunAkhir.Location = new System.Drawing.Point(403, 340);
-            this.numericUpDownTahunAkhir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownTahunAkhir.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownTahunAkhir.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -149,7 +149,7 @@
             // 
             this.numericUpDownTahunAwal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.numericUpDownTahunAwal.Location = new System.Drawing.Point(403, 266);
-            this.numericUpDownTahunAwal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownTahunAwal.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownTahunAwal.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -174,16 +174,16 @@
             this.comboBoxOrganisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.comboBoxOrganisasi.FormattingEnabled = true;
             this.comboBoxOrganisasi.Location = new System.Drawing.Point(403, 82);
-            this.comboBoxOrganisasi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxOrganisasi.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxOrganisasi.Name = "comboBoxOrganisasi";
-            this.comboBoxOrganisasi.Size = new System.Drawing.Size(402, 37);
+            this.comboBoxOrganisasi.Size = new System.Drawing.Size(423, 37);
             this.comboBoxOrganisasi.TabIndex = 42;
             // 
             // buttonTambah
             // 
             this.buttonTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonTambah.Location = new System.Drawing.Point(704, 128);
-            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonTambah.Margin = new System.Windows.Forms.Padding(2);
             this.buttonTambah.Name = "buttonTambah";
             this.buttonTambah.Size = new System.Drawing.Size(122, 45);
             this.buttonTambah.TabIndex = 43;
@@ -219,7 +219,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelFormDaftar);
             this.Controls.Add(this.labelUsername);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormKisahHidup";
             this.Text = "FormKisahHidup";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

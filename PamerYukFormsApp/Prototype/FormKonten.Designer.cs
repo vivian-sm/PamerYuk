@@ -33,83 +33,92 @@
             this.listBoxDeskripsi = new System.Windows.Forms.ListBox();
             this.labelDeskripsi = new System.Windows.Forms.Label();
             this.panelKonten = new System.Windows.Forms.Panel();
-            this.labelFormKonten = new System.Windows.Forms.Label();
+            this.textBoxKomen = new System.Windows.Forms.TextBox();
+            this.buttonKirim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxKomentar
             // 
             this.listBoxKomentar.FormattingEnabled = true;
-            this.listBoxKomentar.ItemHeight = 25;
-            this.listBoxKomentar.Location = new System.Drawing.Point(596, 216);
+            this.listBoxKomentar.ItemHeight = 31;
+            this.listBoxKomentar.Location = new System.Drawing.Point(795, 113);
+            this.listBoxKomentar.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxKomentar.Name = "listBoxKomentar";
-            this.listBoxKomentar.Size = new System.Drawing.Size(786, 554);
+            this.listBoxKomentar.Size = new System.Drawing.Size(1047, 717);
             this.listBoxKomentar.TabIndex = 74;
             // 
             // labelKomentar
             // 
             this.labelKomentar.AutoSize = true;
             this.labelKomentar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelKomentar.Location = new System.Drawing.Point(588, 144);
-            this.labelKomentar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelKomentar.Location = new System.Drawing.Point(786, 29);
             this.labelKomentar.Name = "labelKomentar";
-            this.labelKomentar.Size = new System.Drawing.Size(216, 44);
+            this.labelKomentar.Size = new System.Drawing.Size(263, 54);
             this.labelKomentar.TabIndex = 73;
             this.labelKomentar.Text = "Komentar : ";
             // 
             // listBoxDeskripsi
             // 
             this.listBoxDeskripsi.FormattingEnabled = true;
-            this.listBoxDeskripsi.ItemHeight = 25;
-            this.listBoxDeskripsi.Location = new System.Drawing.Point(42, 531);
+            this.listBoxDeskripsi.ItemHeight = 31;
+            this.listBoxDeskripsi.Location = new System.Drawing.Point(56, 658);
+            this.listBoxDeskripsi.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxDeskripsi.Name = "listBoxDeskripsi";
-            this.listBoxDeskripsi.Size = new System.Drawing.Size(501, 229);
+            this.listBoxDeskripsi.Size = new System.Drawing.Size(667, 283);
             this.listBoxDeskripsi.TabIndex = 72;
             // 
             // labelDeskripsi
             // 
             this.labelDeskripsi.AutoSize = true;
             this.labelDeskripsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelDeskripsi.Location = new System.Drawing.Point(34, 463);
-            this.labelDeskripsi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDeskripsi.Location = new System.Drawing.Point(45, 574);
             this.labelDeskripsi.Name = "labelDeskripsi";
-            this.labelDeskripsi.Size = new System.Drawing.Size(207, 44);
+            this.labelDeskripsi.Size = new System.Drawing.Size(254, 54);
             this.labelDeskripsi.TabIndex = 71;
             this.labelDeskripsi.Text = "Deskripsi : ";
             // 
             // panelKonten
             // 
-            this.panelKonten.Location = new System.Drawing.Point(42, 144);
-            this.panelKonten.Margin = new System.Windows.Forms.Padding(2);
+            this.panelKonten.Location = new System.Drawing.Point(56, 29);
+            this.panelKonten.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelKonten.Name = "panelKonten";
-            this.panelKonten.Size = new System.Drawing.Size(501, 292);
+            this.panelKonten.Size = new System.Drawing.Size(668, 512);
             this.panelKonten.TabIndex = 70;
             // 
-            // labelFormKonten
+            // textBoxKomen
             // 
-            this.labelFormKonten.AutoSize = true;
-            this.labelFormKonten.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
-            this.labelFormKonten.Location = new System.Drawing.Point(411, 30);
-            this.labelFormKonten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelFormKonten.Name = "labelFormKonten";
-            this.labelFormKonten.Size = new System.Drawing.Size(545, 97);
-            this.labelFormKonten.TabIndex = 69;
-            this.labelFormKonten.Text = "Konten Saya";
-            this.labelFormKonten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBoxKomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBoxKomen.Location = new System.Drawing.Point(795, 881);
+            this.textBoxKomen.Name = "textBoxKomen";
+            this.textBoxKomen.Size = new System.Drawing.Size(821, 60);
+            this.textBoxKomen.TabIndex = 75;
+            // 
+            // buttonKirim
+            // 
+            this.buttonKirim.Location = new System.Drawing.Point(1644, 881);
+            this.buttonKirim.Name = "buttonKirim";
+            this.buttonKirim.Size = new System.Drawing.Size(198, 60);
+            this.buttonKirim.TabIndex = 76;
+            this.buttonKirim.Text = "Kirim";
+            this.buttonKirim.UseVisualStyleBackColor = true;
+            this.buttonKirim.Click += new System.EventHandler(this.buttonKirim_Click);
             // 
             // FormKonten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 800);
+            this.ClientSize = new System.Drawing.Size(1888, 992);
+            this.Controls.Add(this.buttonKirim);
+            this.Controls.Add(this.textBoxKomen);
             this.Controls.Add(this.listBoxKomentar);
             this.Controls.Add(this.labelKomentar);
             this.Controls.Add(this.listBoxDeskripsi);
             this.Controls.Add(this.labelDeskripsi);
             this.Controls.Add(this.panelKonten);
-            this.Controls.Add(this.labelFormKonten);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormKonten";
             this.Text = "FormKonten";
+            this.Load += new System.EventHandler(this.FormKonten_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,6 +131,7 @@
         private System.Windows.Forms.ListBox listBoxDeskripsi;
         private System.Windows.Forms.Label labelDeskripsi;
         private System.Windows.Forms.Panel panelKonten;
-        private System.Windows.Forms.Label labelFormKonten;
+        private System.Windows.Forms.TextBox textBoxKomen;
+        private System.Windows.Forms.Button buttonKirim;
     }
 }

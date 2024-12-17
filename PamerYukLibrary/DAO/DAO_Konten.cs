@@ -12,7 +12,7 @@ namespace PamerYukLibrary.DAO
     {
         public static void Insert_Konten(Konten newKonten, string username)
         {
-            string command = "INSERT INTO `pameryuk`.`konten` (`id`, `caption`, `foto`,`video`, `tglUpload`, `username`) VALUES ('"+Get_NewKonten_Id()+"', '"+newKonten.Caption+"', '"+newKonten.Foto+"', '"+newKonten.Video+"','"+newKonten.TglUpload+"', '"+username+"');";
+            string command = "INSERT INTO `pameryuk`.`konten` (`id`, `caption`, `foto`,`video`, `tglUpload`, `username`) VALUES ('"+Get_NewKonten_Id()+"', '"+newKonten.Caption+"', '"+newKonten.Foto+"', '"+newKonten.Video+"','"+newKonten.TglUpload.ToString("yyyy-MM-dd HH:mm:ss")+"', '"+username+"');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 
@@ -61,7 +61,7 @@ namespace PamerYukLibrary.DAO
             else return null;
         }
 
-        private static int Get_NewKonten_Id()
+        public static int Get_NewKonten_Id()
         {
             string command = "select id from konten order by id desc limit 1;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);

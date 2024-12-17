@@ -28,12 +28,12 @@ namespace PamerYukLibrary
             this.Comment = DAO_Komen.Select_Komen(this.Id);
             this.Tag = DAO_Tag.Select_Tag(this.Id);
         }
-        public Konten( string caption, string foto, string video) //New Konten
+        public Konten( string caption, string foto, string video, DateTime tglUpload) //New Konten
         {
             this.Caption = caption;
             this.Foto = foto;
             this.Video = video;
-            this.TglUpload = DateTime.Now;
+            this.TglUpload = tglUpload;
         }
 
         public int Id { get => id; set => id = value; }

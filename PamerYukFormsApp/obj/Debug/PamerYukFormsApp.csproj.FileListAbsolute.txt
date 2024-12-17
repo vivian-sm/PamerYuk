@@ -24,3 +24,8 @@ C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYuk
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarTeman.resources
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormRequestPertemanan.resources
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarKonten.resources
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.ResolveComReference.cache

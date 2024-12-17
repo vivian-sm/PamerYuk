@@ -8,6 +8,8 @@ using PamerYukLibrary;
 using PamerYukLibrary.DAO;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace PamerYukFormsApp
 {
@@ -18,6 +20,9 @@ namespace PamerYukFormsApp
         private List<Kota> listKota;
         private List<Organisasi> listOrganisasi;
         private List<Teman> listTeman;
+
+        private string MediafilePath = @"C:\PamerYuk\";
+        private string MediafilePathDB = @"C:\\PamerYuk\\";
         #endregion
 
         #region CONSTRUCTOR
@@ -42,6 +47,7 @@ namespace PamerYukFormsApp
             this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);
         }
         #endregion
+
         #region METHOD (USER) 
         //For User
         public void LogIn(string username, string password)
@@ -57,6 +63,7 @@ namespace PamerYukFormsApp
         }
 
         #endregion
+
         #region METHOD (KISAH HIDUP)
         //For Kisah Hidup
         public void Tambah_KisahHidup(KisahHidup newKisahHidup)
@@ -117,6 +124,7 @@ namespace PamerYukFormsApp
             return DAO_Teman.Select_RequestPertemanan(this.Current_user.Username, jenis);
         }
         #endregion
+
         #region METHOD (KONTEN)
         public Konten Tambah_Komen(Komen komen, Konten newKonten)
         {
@@ -128,6 +136,39 @@ namespace PamerYukFormsApp
         public Konten Lihat_Konten(int id)
         {
             return DAO_Konten.Select_Konten(id);
+        }
+
+        public void Tambah_Konten(string caption, OpenFileDialog fdialog)
+        {
+            Konten newKonten;
+            string newPath = "";
+            if (Path.GetExtension(fdialog.FileName) == ".jpg")
+            {
+                newPath = New_FileName(true);
+                newKonten = new Konten(caption, Path.Combine(this.MediafilePathDB,newPath), "null",DateTime.Now);
+            }
+            else
+            {
+                newPath = New_FileName(false);
+                newKonten = new Konten(caption, "null", Path.Combine(this.MediafilePathDB, newPath), DateTime.Now);
+            }
+            File.Copy(fdialog.FileName, Path.Combine(this.MediafilePath, newPath));
+            DAO_Konten.Insert_Konten(newKonten, this.Current_user.Username);
+            this.Current_user.ListKonten = DAO_Konten.Select_ListKonten(this.current_user.Username);
+        }
+        private string New_FileName(bool type)
+        {
+
+            string path = this.current_user.Username + "x" + DateTime.Now.ToString("yyyyMMddHHmmss") + "x" + DAO_Konten.Get_NewKonten_Id();
+            if (type)
+            {
+                path += ".jpg";
+            }
+            else
+            {
+                path += ".mp4";
+            }
+            return path;
         }
         #endregion
     }

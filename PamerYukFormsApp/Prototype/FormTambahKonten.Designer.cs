@@ -28,73 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTambahKonten));
             this.buttonGantiGambar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.buttonTambah = new System.Windows.Forms.Button();
-            this.listBoxDeskripsi = new System.Windows.Forms.ListBox();
             this.labelDeskripsi = new System.Windows.Forms.Label();
-            this.labelGambar = new System.Windows.Forms.Label();
             this.labelFormTambahKonten = new System.Windows.Forms.Label();
+            this.textBoxCaption = new System.Windows.Forms.TextBox();
+            this.pictureBoxMedia = new System.Windows.Forms.PictureBox();
+            this.videoPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMedia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonGantiGambar
             // 
-            this.buttonGantiGambar.Location = new System.Drawing.Point(511, 509);
-            this.buttonGantiGambar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGantiGambar.Location = new System.Drawing.Point(897, 849);
+            this.buttonGantiGambar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGantiGambar.Name = "buttonGantiGambar";
             this.buttonGantiGambar.Size = new System.Drawing.Size(207, 82);
             this.buttonGantiGambar.TabIndex = 74;
-            this.buttonGantiGambar.Text = "Ganti Gambar";
+            this.buttonGantiGambar.Text = "Pilih Media";
             this.buttonGantiGambar.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(71, 178);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 413);
-            this.panel1.TabIndex = 73;
+            this.buttonGantiGambar.Click += new System.EventHandler(this.buttonGantiGambar_Click);
             // 
             // buttonTambah
             // 
             this.buttonTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonTambah.Location = new System.Drawing.Point(1612, 928);
+            this.buttonTambah.Location = new System.Drawing.Point(1601, 909);
             this.buttonTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambah.Name = "buttonTambah";
-            this.buttonTambah.Size = new System.Drawing.Size(227, 63);
+            this.buttonTambah.Size = new System.Drawing.Size(238, 82);
             this.buttonTambah.TabIndex = 72;
             this.buttonTambah.Text = "Tambah";
             this.buttonTambah.UseVisualStyleBackColor = true;
-            // 
-            // listBoxDeskripsi
-            // 
-            this.listBoxDeskripsi.FormattingEnabled = true;
-            this.listBoxDeskripsi.ItemHeight = 31;
-            this.listBoxDeskripsi.Location = new System.Drawing.Point(60, 707);
-            this.listBoxDeskripsi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBoxDeskripsi.Name = "listBoxDeskripsi";
-            this.listBoxDeskripsi.Size = new System.Drawing.Size(1777, 190);
-            this.listBoxDeskripsi.TabIndex = 71;
+            this.buttonTambah.Click += new System.EventHandler(this.buttonTambah_Click);
             // 
             // labelDeskripsi
             // 
             this.labelDeskripsi.AutoSize = true;
             this.labelDeskripsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelDeskripsi.Location = new System.Drawing.Point(49, 622);
+            this.labelDeskripsi.Location = new System.Drawing.Point(904, 553);
             this.labelDeskripsi.Name = "labelDeskripsi";
             this.labelDeskripsi.Size = new System.Drawing.Size(254, 54);
             this.labelDeskripsi.TabIndex = 70;
             this.labelDeskripsi.Text = "Deskripsi : ";
-            // 
-            // labelGambar
-            // 
-            this.labelGambar.AutoSize = true;
-            this.labelGambar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelGambar.Location = new System.Drawing.Point(73, 110);
-            this.labelGambar.Name = "labelGambar";
-            this.labelGambar.Size = new System.Drawing.Size(230, 54);
-            this.labelGambar.TabIndex = 67;
-            this.labelGambar.Text = "Gambar : ";
             // 
             // labelFormTambahKonten
             // 
@@ -107,21 +84,53 @@
             this.labelFormTambahKonten.Text = "Tambah Konten";
             this.labelFormTambahKonten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // textBoxCaption
+            // 
+            this.textBoxCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBoxCaption.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxCaption.Location = new System.Drawing.Point(904, 623);
+            this.textBoxCaption.Multiline = true;
+            this.textBoxCaption.Name = "textBoxCaption";
+            this.textBoxCaption.Size = new System.Drawing.Size(935, 192);
+            this.textBoxCaption.TabIndex = 75;
+            // 
+            // pictureBoxMedia
+            // 
+            this.pictureBoxMedia.Location = new System.Drawing.Point(43, 111);
+            this.pictureBoxMedia.Name = "pictureBoxMedia";
+            this.pictureBoxMedia.Size = new System.Drawing.Size(800, 800);
+            this.pictureBoxMedia.TabIndex = 76;
+            this.pictureBoxMedia.TabStop = false;
+            // 
+            // videoPlayer
+            // 
+            this.videoPlayer.Enabled = true;
+            this.videoPlayer.Location = new System.Drawing.Point(913, 111);
+            this.videoPlayer.MaximumSize = new System.Drawing.Size(800, 800);
+            this.videoPlayer.Name = "videoPlayer";
+            this.videoPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("videoPlayer.OcxState")));
+            this.videoPlayer.Size = new System.Drawing.Size(800, 428);
+            this.videoPlayer.TabIndex = 77;
+            // 
             // FormTambahKonten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1888, 1019);
+            this.Controls.Add(this.videoPlayer);
+            this.Controls.Add(this.pictureBoxMedia);
+            this.Controls.Add(this.textBoxCaption);
             this.Controls.Add(this.buttonGantiGambar);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonTambah);
-            this.Controls.Add(this.listBoxDeskripsi);
             this.Controls.Add(this.labelDeskripsi);
-            this.Controls.Add(this.labelGambar);
             this.Controls.Add(this.labelFormTambahKonten);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormTambahKonten";
             this.Text = "FormTambahKonten";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormTambahKonten_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMedia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,11 +138,11 @@
 
         #endregion
         private System.Windows.Forms.Button buttonGantiGambar;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonTambah;
-        private System.Windows.Forms.ListBox listBoxDeskripsi;
         private System.Windows.Forms.Label labelDeskripsi;
-        private System.Windows.Forms.Label labelGambar;
         private System.Windows.Forms.Label labelFormTambahKonten;
+        private System.Windows.Forms.TextBox textBoxCaption;
+        private System.Windows.Forms.PictureBox pictureBoxMedia;
+        private AxWMPLib.AxWindowsMediaPlayer videoPlayer;
     }
 }

@@ -43,7 +43,7 @@ namespace PamerYukFormsApp.Prototype
             if (e.ColumnIndex == dataGridViewDaftarKonten.Columns["btnLihat"].Index)
             {
                 int kid = int.Parse(dataGridViewDaftarKonten.CurrentRow.Cells["id"].Value.ToString());
-                FormKonten frm = new FormKonten(FormUtama.service.Lihat_Konten(kid));
+                FormKonten frm = new FormKonten(kid);
                 frm.Owner = this;
                 frm.ShowDialog();
             }

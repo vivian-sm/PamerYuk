@@ -84,6 +84,7 @@
             this.panelKonten.Name = "panelKonten";
             this.panelKonten.Size = new System.Drawing.Size(668, 512);
             this.panelKonten.TabIndex = 70;
+            this.panelKonten.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKonten_Paint);
             // 
             // textBoxKomen
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PamerYukLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,46 @@ namespace PamerYukFormsApp.Prototype
 
         private void FormAkun_Load(object sender, EventArgs e)
         {
+            //Notes : Kota nanti diganti combobox!
             textBoxUsername.Text = FormUtama.service.Current_user.Username;
             textBoxNoKTP.Text = FormUtama.service.Current_user.NoKTP;
             textBoxTanggalLahir.Text = FormUtama.service.Current_user.TglLahir.ToString();
             textBoxKota.Text = FormUtama.service.Current_user.Kota.Nama;
+            listBoxKisahHidup.DataSource = DisplayKisahHidup();
+        }
 
+        #region METHOD
+        private List<string> DisplayKisahHidup()
+        {
+            List<string> list = new List<string>();
+            foreach (KisahHidup kisah in FormUtama.service.Current_user.ListKisahHidup)
+            {
+                {
+                    list.Add(kisah.ToString());
+                }
+            }
+            return list;
+        }
+        #endregion
+
+        private void buttonEditProfil_Click(object sender, EventArgs e)
+        {
+            string username = textBoxUsername.Text;
+            string noKTP = textBoxNoKTP.Text;
+            DateTime tgLahir = DateTime.Parse(textBoxTanggalLahir.Text);
+            string Image = "";
+            Kota kota = null; //Ganti combobox dulu baru bisa di code
+            MessageBox.Show("Apakah anda yakin ingin mengubah data akun anda?","Peringatan Perubahan!",MessageBoxButtons.YesNo);
+            if (DialogResult == DialogResult.Yes)
+            {
+               //Update data user
+            }
+            
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            FormAkun_Load(sender, e);
         }
     }
 }

@@ -30,8 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cariTemanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.daftarTemanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.requestPertemananToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.percakapanSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kontenSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tambahKontenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.daftarKontenSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profilSayaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahKisahHidupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -56,9 +60,27 @@
             // 
             // cariTemanToolStripMenuItem
             // 
+            this.cariTemanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.daftarTemanToolStripMenuItem,
+            this.requestPertemananToolStripMenuItem});
             this.cariTemanToolStripMenuItem.Name = "cariTemanToolStripMenuItem";
             this.cariTemanToolStripMenuItem.Size = new System.Drawing.Size(188, 45);
             this.cariTemanToolStripMenuItem.Text = "Cari Teman";
+            this.cariTemanToolStripMenuItem.Click += new System.EventHandler(this.cariTemanToolStripMenuItem_Click);
+            // 
+            // daftarTemanToolStripMenuItem
+            // 
+            this.daftarTemanToolStripMenuItem.Name = "daftarTemanToolStripMenuItem";
+            this.daftarTemanToolStripMenuItem.Size = new System.Drawing.Size(457, 54);
+            this.daftarTemanToolStripMenuItem.Text = "Daftar Teman";
+            this.daftarTemanToolStripMenuItem.Click += new System.EventHandler(this.daftarTemanToolStripMenuItem_Click);
+            // 
+            // requestPertemananToolStripMenuItem
+            // 
+            this.requestPertemananToolStripMenuItem.Name = "requestPertemananToolStripMenuItem";
+            this.requestPertemananToolStripMenuItem.Size = new System.Drawing.Size(457, 54);
+            this.requestPertemananToolStripMenuItem.Text = "Request Pertemanan";
+            this.requestPertemananToolStripMenuItem.Click += new System.EventHandler(this.requestPertemananToolStripMenuItem_Click);
             // 
             // percakapanSayaToolStripMenuItem
             // 
@@ -68,9 +90,27 @@
             // 
             // kontenSayaToolStripMenuItem
             // 
+            this.kontenSayaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tambahKontenToolStripMenuItem,
+            this.daftarKontenSayaToolStripMenuItem});
             this.kontenSayaToolStripMenuItem.Name = "kontenSayaToolStripMenuItem";
             this.kontenSayaToolStripMenuItem.Size = new System.Drawing.Size(205, 45);
             this.kontenSayaToolStripMenuItem.Text = "Konten Saya";
+            this.kontenSayaToolStripMenuItem.Click += new System.EventHandler(this.kontenSayaToolStripMenuItem_Click);
+            // 
+            // tambahKontenToolStripMenuItem
+            // 
+            this.tambahKontenToolStripMenuItem.Name = "tambahKontenToolStripMenuItem";
+            this.tambahKontenToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.tambahKontenToolStripMenuItem.Text = "Tambah Konten";
+            this.tambahKontenToolStripMenuItem.Click += new System.EventHandler(this.tambahKontenToolStripMenuItem_Click);
+            // 
+            // daftarKontenSayaToolStripMenuItem
+            // 
+            this.daftarKontenSayaToolStripMenuItem.Name = "daftarKontenSayaToolStripMenuItem";
+            this.daftarKontenSayaToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.daftarKontenSayaToolStripMenuItem.Text = "Daftar Konten Saya";
+            this.daftarKontenSayaToolStripMenuItem.Click += new System.EventHandler(this.daftarKontenSayaToolStripMenuItem_Click);
             // 
             // profilSayaToolStripMenuItem
             // 
@@ -93,9 +133,10 @@
             this.ClientSize = new System.Drawing.Size(1888, 992);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FormUtama";
             this.Text = "FormUtama";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormUtama_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -112,6 +153,10 @@
         private System.Windows.Forms.ToolStripMenuItem kontenSayaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profilSayaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tambahKisahHidupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tambahKontenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem daftarKontenSayaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem daftarTemanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem requestPertemananToolStripMenuItem;
     }
 }
 

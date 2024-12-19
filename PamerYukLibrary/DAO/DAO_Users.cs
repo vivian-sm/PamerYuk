@@ -9,6 +9,7 @@ using System.Drawing;
 
 using MySql.Data.MySqlClient;
 using PamerYukLibrary.Database;
+using System.Diagnostics.Eventing.Reader;
 
 namespace PamerYukLibrary.DAO
 {
@@ -16,7 +17,6 @@ namespace PamerYukLibrary.DAO
     {
         //This class exist to connect repositories to database
 
-        #region USERS DAO
         //Users
         public static User User_Log_In(string username, string password)
         {
@@ -44,6 +44,8 @@ namespace PamerYukLibrary.DAO
 
                 //Create User
                 user = new User(username, password, tgllahir, noKTP, foto, newKota);
+                user.ListKonten = DAO_Konten.Select_ListKonten(username);
+                user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(username);
                 Console.WriteLine("Data user dari database berhasil diambil");
             }
             else
@@ -58,6 +60,108 @@ namespace PamerYukLibrary.DAO
             string command = "INSERT INTO `pameryuk`.`user` (`username`, `password`, `tglLahir`, `noKTP`, `foto`, `Kota_id`) VALUES('"+username+"', '"+password+"', '"+tglLahir.ToString("yyyy-MM-dd")+"', '"+noKTP+"', '"+foto+"', '"+kota.Id+"');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
-        #endregion
+
+        public static void Update_User()
+        {
+            string command = "UPDATE ";
+            KoneksiDatabase.DatabaseDMLCommand(command);
+        }
+
+        public static List<User> Select_UserTeman_ByUSN(string username)
+        {
+            string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
+            
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            List<User> listAkun = new List<User>();
+            User user;
+            while (dr.Read())
+            {
+                //User
+                string usname = dr.GetValue(0).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());
+                string noKTP = dr.GetValue(3).ToString();
+                string foto = dr.GetValue(4).ToString(); //Still confuse with this image data format
+                int kota_id_fk = int.Parse(dr.GetValue(5).ToString());
+
+                //Kota
+                int kota_id = int.Parse(dr.GetValue(6).ToString());
+                string nama = dr.GetValue(7).ToString();
+
+                //Create Kota
+                Kota newKota = new Kota(kota_id, nama);
+
+                //Create User
+                user = new User(usname, tgllahir, noKTP, foto, newKota);
+                user.ListKonten = DAO_Konten.Select_ListKonten(username);
+                user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(username);
+                listAkun.Add(user);
+                Console.WriteLine("Data user dari database berhasil diambil");
+            }
+            return listAkun;
+        }
+
+        public static User Select_AkunTeman(string username)
+        {
+            string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
+
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            User user;
+            if (dr.Read())
+            {
+                //User
+                string usname = dr.GetValue(0).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());
+                string noKTP = dr.GetValue(3).ToString();
+                string foto = dr.GetValue(4).ToString(); //Still confuse with this image data format
+                int kota_id_fk = int.Parse(dr.GetValue(5).ToString());
+
+                //Kota
+                int kota_id = int.Parse(dr.GetValue(6).ToString());
+                string nama = dr.GetValue(7).ToString();
+
+                //Create Kota
+                Kota newKota = new Kota(kota_id, nama);
+
+                //Create User
+                user = new User(usname, tgllahir, noKTP, foto, newKota);
+                user.ListKonten = DAO_Konten.Select_ListKonten(username);
+                user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(username);
+                return user;
+            }
+            else return null;
+        }
+
+        public static List<User> Select_UserTeman_ByOrganisasi(Organisasi organisasi, User current_user)
+        {
+            string command = "SELECT u.username, u.tgllahir, u.noktp, u.foto, u.kota_id, ko.nama FROM user u inner join kisahhidup k on  u.username = k.username inner join kota ko on u.kota_id = ko.id where k.organisasi_id = '"+organisasi.Id+ "' and k.username != '"+current_user.Username+"';";
+
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);
+            List<User> listAkun = new List<User>();
+            User user;
+            while (dr.Read())
+            {
+                //User
+                string usname = dr.GetValue(0).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(1).ToString());
+                string noKTP = dr.GetValue(2).ToString();
+                string foto = dr.GetValue(3).ToString(); //Still confuse with this image data format
+                int kota_id_fk = int.Parse(dr.GetValue(4).ToString());
+
+                //Kota
+                string nama = dr.GetValue(5).ToString();
+
+                //Create Kota
+                Kota newKota = new Kota(kota_id_fk, nama);
+
+                //Create User
+                user = new User(usname, tgllahir, noKTP, foto, newKota);
+                user.ListKonten = DAO_Konten.Select_ListKonten(usname);
+                user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(usname);
+                listAkun.Add(user);
+                Console.WriteLine("Data user dari database berhasil diambil");
+            }
+            return listAkun;
+
+        }
     }
 }

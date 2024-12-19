@@ -34,7 +34,6 @@ namespace PamerYukFormsApp.Prototype
             if(FormUtama.service.Current_user!=null)
             {
                 textBoxUsername.Text = FormUtama.service.Current_user.Username;
-                textBoxPassword.Text = FormUtama.service.Current_user.Check_Password();
             }
         }
 

@@ -10,6 +10,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace PamerYukFormsApp
 {
@@ -23,6 +24,7 @@ namespace PamerYukFormsApp
 
         private string MediafilePath = @"C:\PamerYuk\";
         private string MediafilePathDB = @"C:\\PamerYuk\\";
+        public List<User> tempTagList = new List<User>();
         #endregion
 
         #region CONSTRUCTOR
@@ -30,6 +32,7 @@ namespace PamerYukFormsApp
         {
             this.ListOrganisasi = DAO_Organisasi.Select_Organisasi();
             this.ListKota = DAO_Kota.Select_ListKota();
+            CreateDirectory();
         }
         #endregion
 
@@ -45,6 +48,7 @@ namespace PamerYukFormsApp
         public void OnLoad()
         {
             this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);
+            
         }
         #endregion
 
@@ -55,11 +59,13 @@ namespace PamerYukFormsApp
             this.Current_user = DAO_Users.User_Log_In(username, password);
         }
 
-        public User Daftar(string username, string password, DateTime tglLahir, string noKTP, string foto, Kota kota)
+        public void Daftar(string username, string password, DateTime tglLahir, string noKTP, string foto, Kota kota)
         {
-            User new_user = new User(username, password, tglLahir, noKTP, foto, kota);
-            DAO_Users.User_Daftar(username, password, tglLahir, noKTP, foto, kota);
-            return new_user;
+            string newFotoPath = New_ProfilePictureFileName(username);
+            File.Copy(foto, Path.Combine(this.MediafilePath, newFotoPath));
+            User new_user = new User(username, password, tglLahir, noKTP,Path.Combine(this.MediafilePath,newFotoPath), kota);
+            DAO_Users.User_Daftar(username, password, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoPath), kota);
+            this.Current_user = new_user;
         }
 
         #endregion
@@ -133,6 +139,19 @@ namespace PamerYukFormsApp
             return newKonten;
         }
 
+        private List<User> Pindah_Tag()
+        {
+            List<User> tags = new List<User>();
+            tags = this.tempTagList;
+            this.tempTagList = null;
+            return tags;
+        }
+
+        public void Tambah_Tag(string username)
+        {
+            tempTagList.Add(DAO_Users.Select_Tag_ByUSN(username));
+        }
+
         public Konten Lihat_Konten(int id)
         {
             return DAO_Konten.Select_Konten(id);
@@ -140,22 +159,28 @@ namespace PamerYukFormsApp
 
         public void Tambah_Konten(string caption, OpenFileDialog fdialog)
         {
+            List<User> tags = new List<User>();
+            tags = Pindah_Tag();
             Konten newKonten;
             string newPath = "";
             if (Path.GetExtension(fdialog.FileName) == ".jpg")
             {
                 newPath = New_FileName(true);
-                newKonten = new Konten(caption, Path.Combine(this.MediafilePathDB,newPath), "null",DateTime.Now);
+                newKonten = new Konten(caption, Path.Combine(this.MediafilePathDB,newPath), "null",DateTime.Now,tags);
             }
             else
             {
                 newPath = New_FileName(false);
-                newKonten = new Konten(caption, "null", Path.Combine(this.MediafilePathDB, newPath), DateTime.Now);
+                newKonten = new Konten(caption, "null", Path.Combine(this.MediafilePathDB, newPath), DateTime.Now,tags);
             }
             File.Copy(fdialog.FileName, Path.Combine(this.MediafilePath, newPath));
             DAO_Konten.Insert_Konten(newKonten, this.Current_user.Username);
             this.Current_user.ListKonten = DAO_Konten.Select_ListKonten(this.current_user.Username);
         }
+        #endregion
+
+        #region METHOD
+        //File Handling
         private string New_FileName(bool type)
         {
 
@@ -170,6 +195,20 @@ namespace PamerYukFormsApp
             }
             return path;
         }
+
+        private string New_ProfilePictureFileName(string username)
+        {
+            return username + "xPFPx" + DateTime.Now.ToString("yyyyMMddHHmmss")+".jpg";
+        }
+
+        private void CreateDirectory()
+        {
+            if (!Directory.Exists(MediafilePath))
+            {
+                Directory.CreateDirectory(MediafilePath);
+            }
+        }
+        
         #endregion
     }
 }

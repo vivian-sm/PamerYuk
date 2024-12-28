@@ -67,10 +67,12 @@ namespace PamerYukLibrary.DAO
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 
+
+
         public static List<User> Select_UserTeman_ByUSN(string username)
         {
             string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
-            
+
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<User> listAkun = new List<User>();
             User user;
@@ -99,7 +101,37 @@ namespace PamerYukLibrary.DAO
             }
             return listAkun;
         }
+        public static User Select_Tag_ByUSN(string username)
+        {
+            string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
 
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            User user;
+            if (dr.Read())
+            {
+                //User
+                string usname = dr.GetValue(0).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());
+                string noKTP = dr.GetValue(3).ToString();
+                string foto = dr.GetValue(4).ToString(); //Still confuse with this image data format
+                int kota_id_fk = int.Parse(dr.GetValue(5).ToString());
+
+                //Kota
+                int kota_id = int.Parse(dr.GetValue(6).ToString());
+                string nama = dr.GetValue(7).ToString();
+
+                //Create Kota
+                Kota newKota = new Kota(kota_id, nama);
+
+                //Create User
+                user = new User(usname, tgllahir, noKTP, foto, newKota);
+                user.ListKonten = DAO_Konten.Select_ListKonten(username);
+                user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(username);
+                Console.WriteLine("Data user dari database berhasil diambil");
+                return user;
+            }
+            else return null;
+        }
         public static User Select_AkunTeman(string username)
         {
             string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";

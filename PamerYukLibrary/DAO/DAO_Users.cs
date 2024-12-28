@@ -69,7 +69,7 @@ namespace PamerYukLibrary.DAO
 
 
 
-        public static List<User> Select_UserTeman_ByUSN(string username)
+        public static List<User> Select_ListUser_ByUSN(string username)
         {
             string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
 
@@ -132,7 +132,7 @@ namespace PamerYukLibrary.DAO
             }
             else return null;
         }
-        public static User Select_AkunTeman(string username)
+        public static User Select_User(string username)
         {
             string perintah = "SELECT * FROM user u inner join kota k on u.kota_id = k.id where username ='" + username + "';";
 
@@ -163,7 +163,7 @@ namespace PamerYukLibrary.DAO
             else return null;
         }
 
-        public static List<User> Select_UserTeman_ByOrganisasi(Organisasi organisasi, User current_user)
+        public static List<User> Select_ListUser_ByOrganisasi(Organisasi organisasi, User current_user)
         {
             string command = "SELECT u.username, u.tgllahir, u.noktp, u.foto, u.kota_id, ko.nama FROM user u inner join kisahhidup k on  u.username = k.username inner join kota ko on u.kota_id = ko.id where k.organisasi_id = '"+organisasi.Id+ "' and k.username != '"+current_user.Username+"';";
 

@@ -11,6 +11,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using PamerYukLibrary.Entity;
 
 namespace PamerYukFormsApp
 {
@@ -21,10 +22,9 @@ namespace PamerYukFormsApp
         private List<Kota> listKota;
         private List<Organisasi> listOrganisasi;
         private List<Teman> listTeman;
-
         private string MediafilePath = @"C:\PamerYuk\";
         private string MediafilePathDB = @"C:\\PamerYuk\\";
-        public List<User> tempTagList = new List<User>();
+        private List<User> tempTagList = new List<User>();
         #endregion
 
         #region CONSTRUCTOR
@@ -47,8 +47,7 @@ namespace PamerYukFormsApp
         #region ONLOAD
         public void OnLoad()
         {
-            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);
-            
+            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);       
         }
         #endregion
 
@@ -72,8 +71,9 @@ namespace PamerYukFormsApp
 
         #region METHOD (KISAH HIDUP)
         //For Kisah Hidup
-        public void Tambah_KisahHidup(KisahHidup newKisahHidup)
+        public void Tambah_KisahHidup(Organisasi organisasi, int thawal, int thakhir, string deskripsi)
         {
+            KisahHidup newKisahHidup = new KisahHidup(organisasi, thawal, thakhir, deskripsi);
             DAO_KisahHidup.Insert_KisahHidup(newKisahHidup, this.Current_user);
             this.current_user.ListKisahHidup = DAO_KisahHidup.Select_ListKisahHidup(this.Current_user.Username);
         }
@@ -92,17 +92,17 @@ namespace PamerYukFormsApp
         #region METHOD (TEMAN)
         public List<User> Cari_Teman(Organisasi organisasi)
         {
-            return DAO_Users.Select_UserTeman_ByOrganisasi(organisasi, this.Current_user);
+            return DAO_Users.Select_ListUser_ByOrganisasi(organisasi, this.Current_user);
         }
 
         public List<User> Cari_Teman(string username)
         {
-            return DAO_Users.Select_UserTeman_ByUSN(username);
+            return DAO_Users.Select_ListUser_ByUSN(username);
         }
 
         public User Cari_AkunTeman(string username)
         {
-            return DAO_Users.Select_AkunTeman(username);
+            return DAO_Users.Select_User(username);
         }
 
         public void Request_Pertemanan(string username)
@@ -149,7 +149,7 @@ namespace PamerYukFormsApp
 
         public void Tambah_Tag(string username)
         {
-            tempTagList.Add(DAO_Users.Select_Tag_ByUSN(username));
+            tempTagList.Add(DAO_Users.Select_User(username));
         }
 
         public Konten Lihat_Konten(int id)
@@ -208,7 +208,20 @@ namespace PamerYukFormsApp
                 Directory.CreateDirectory(MediafilePath);
             }
         }
-        
+
+        #endregion
+
+        #region CHAT
+
+        public List<Chat> Buka_Chat(string username)
+        {
+            return DAO_Chat.Select_Chat(username, this.Current_user.Username);
+        }
+
+        public void Kirim_Chat(Chat chat)
+        {
+            DAO_Chat.Insert_Chat(chat);
+        }
         #endregion
     }
 }

@@ -40,11 +40,11 @@
             this.buttonDaftar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelInformation = new System.Windows.Forms.Panel();
-            this.panelDaftar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelDaftar = new System.Windows.Forms.Panel();
             this.panelInformation.SuspendLayout();
-            this.panelDaftar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDaftar.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonMasuk
@@ -54,7 +54,7 @@
             this.buttonMasuk.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonMasuk.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonMasuk.Location = new System.Drawing.Point(724, 539);
+            this.buttonMasuk.Location = new System.Drawing.Point(684, 539);
             this.buttonMasuk.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMasuk.Name = "buttonMasuk";
             this.buttonMasuk.Size = new System.Drawing.Size(535, 74);
@@ -69,7 +69,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(719, 93);
+            this.label4.Location = new System.Drawing.Point(679, 93);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(223, 29);
@@ -83,7 +83,7 @@
             this.textBoxPassword.BackColor = System.Drawing.Color.White;
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxPassword.Location = new System.Drawing.Point(724, 438);
+            this.textBoxPassword.Location = new System.Drawing.Point(684, 438);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
@@ -95,7 +95,7 @@
             this.labelPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelPassword.Location = new System.Drawing.Point(724, 392);
+            this.labelPassword.Location = new System.Drawing.Point(684, 392);
             this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(160, 32);
@@ -107,7 +107,7 @@
             this.labelUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelUsername.Location = new System.Drawing.Point(724, 270);
+            this.labelUsername.Location = new System.Drawing.Point(684, 270);
             this.labelUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(166, 32);
@@ -120,7 +120,7 @@
             this.textBoxUsername.BackColor = System.Drawing.Color.White;
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxUsername.Location = new System.Drawing.Point(724, 315);
+            this.textBoxUsername.Location = new System.Drawing.Point(684, 315);
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(535, 39);
@@ -146,7 +146,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label7.Location = new System.Drawing.Point(719, 204);
+            this.label7.Location = new System.Drawing.Point(679, 204);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(473, 29);
@@ -189,7 +189,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(711, 122);
+            this.label1.Location = new System.Drawing.Point(671, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(340, 73);
@@ -209,15 +209,6 @@
             this.panelInformation.Size = new System.Drawing.Size(608, 816);
             this.panelInformation.TabIndex = 36;
             // 
-            // panelDaftar
-            // 
-            this.panelDaftar.Controls.Add(this.label3);
-            this.panelDaftar.Controls.Add(this.buttonDaftar);
-            this.panelDaftar.Location = new System.Drawing.Point(809, 664);
-            this.panelDaftar.Name = "panelDaftar";
-            this.panelDaftar.Size = new System.Drawing.Size(349, 62);
-            this.panelDaftar.TabIndex = 39;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -229,6 +220,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelDaftar
+            // 
+            this.panelDaftar.Controls.Add(this.label3);
+            this.panelDaftar.Controls.Add(this.buttonDaftar);
+            this.panelDaftar.Location = new System.Drawing.Point(769, 664);
+            this.panelDaftar.Name = "panelDaftar";
+            this.panelDaftar.Size = new System.Drawing.Size(349, 62);
+            this.panelDaftar.TabIndex = 39;
             // 
             // UC_Login
             // 
@@ -251,9 +251,9 @@
             this.Click += new System.EventHandler(this.UC_Login_Load);
             this.panelInformation.ResumeLayout(false);
             this.panelInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDaftar.ResumeLayout(false);
             this.panelDaftar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

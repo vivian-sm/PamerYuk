@@ -59,5 +59,57 @@ namespace PamerYukFormsApp.Prototype2
             //service.OnLoad();
             //            
         }
+
+        private void AddUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelUtama.Controls.Clear();
+            panelUtama.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            UC_Home uc_home = new UC_Home(this);
+            AddUserControl(uc_home);
+            this.MaximizeBox = true;
+            ResetNavigationBar();
+            this.buttonHome.Image = Properties.Resources.Home_true;
+        }
+
+        private void buttonTambahKonten_Click(object sender, EventArgs e)
+        {
+            UC_TambahKonten uc_tambah = new UC_TambahKonten(this);
+            AddUserControl(uc_tambah);
+            this.MaximizeBox = true;
+            ResetNavigationBar();
+            this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_true;
+        }
+
+        private void buttonChat_Click(object sender, EventArgs e)
+        {
+            UC_Chat uc_chat = new UC_Chat(this);
+            AddUserControl(uc_chat);
+            this.MaximizeBox = true;
+            ResetNavigationBar();
+            this.buttonChat.Image = Properties.Resources.Chat_true;
+        }
+
+        private void buttonProfile_Click(object sender, EventArgs e)
+        {
+            UC_Profile uc_profile = new UC_Profile(this);
+            AddUserControl(uc_profile);
+            this.MaximizeBox = true;
+            ResetNavigationBar();
+            this.buttonProfile.Image = Properties.Resources.Profile_true;
+        }
+
+        private void ResetNavigationBar()
+        {
+            this.buttonHome.Image = Properties.Resources.Home_true;
+            this.buttonChat.Image = Properties.Resources.Chat_false;
+            this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_false;
+            this.buttonProfile.Image = Properties.Resources.Profile_false;
+        }
     }
 }

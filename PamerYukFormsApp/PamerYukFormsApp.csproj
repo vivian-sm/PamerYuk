@@ -60,6 +60,30 @@
     <Compile Include="Prototype2\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarDataDiri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarDataDiri.Designer.cs">
+      <DependentUpon>UC_DaftarDataDiri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarUsername.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarUsername.Designer.cs">
+      <DependentUpon>UC_DaftarUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_Login.Designer.cs">
+      <DependentUpon>UC_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype\FormAkun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +173,18 @@
     <Compile Include="Service.cs" />
     <EmbeddedResource Include="Prototype2\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_DaftarDataDiri.resx">
+      <DependentUpon>UC_DaftarDataDiri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_DaftarUsername.resx">
+      <DependentUpon>UC_DaftarUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_Login.resx">
+      <DependentUpon>UC_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormAkun.resx">
       <DependentUpon>FormAkun.cs</DependentUpon>

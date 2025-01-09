@@ -30,11 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.NavigationBar = new System.Windows.Forms.TableLayoutPanel();
+            this.panelUtama = new System.Windows.Forms.Panel();
             this.buttonHome = new System.Windows.Forms.PictureBox();
             this.buttonChat = new System.Windows.Forms.PictureBox();
             this.buttonTambahKonten = new System.Windows.Forms.PictureBox();
             this.buttonProfile = new System.Windows.Forms.PictureBox();
-            this.panelUtama = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.NavigationBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonHome)).BeginInit();
@@ -82,6 +82,17 @@
             this.NavigationBar.Size = new System.Drawing.Size(376, 78);
             this.NavigationBar.TabIndex = 1;
             // 
+            // panelUtama
+            // 
+            this.panelUtama.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelUtama.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelUtama.Location = new System.Drawing.Point(0, 0);
+            this.panelUtama.Name = "panelUtama";
+            this.panelUtama.Size = new System.Drawing.Size(1278, 842);
+            this.panelUtama.TabIndex = 2;
+            // 
             // buttonHome
             // 
             this.buttonHome.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -126,17 +137,6 @@
             this.buttonProfile.TabIndex = 0;
             this.buttonProfile.TabStop = false;
             // 
-            // panelUtama
-            // 
-            this.panelUtama.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelUtama.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelUtama.Location = new System.Drawing.Point(0, 0);
-            this.panelUtama.Name = "panelUtama";
-            this.panelUtama.Size = new System.Drawing.Size(1278, 842);
-            this.panelUtama.TabIndex = 2;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -146,6 +146,7 @@
             this.Controls.Add(this.panelUtama);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.NavigationBar.ResumeLayout(false);

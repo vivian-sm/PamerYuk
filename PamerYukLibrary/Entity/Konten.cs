@@ -30,13 +30,15 @@ namespace PamerYukLibrary
             this.Tag = DAO_Tag.Select_Tag(this.Id);
             this.Like = DAO_Like.Select_LikeCount(this.Id);
         }
-        public Konten( string caption, string foto, string video, DateTime tglUpload,List<User> tag) //New Konten
+        public Konten( string caption, string foto, string video, DateTime tglUpload) //New Konten
         {
-            this.Caption = caption;
-            this.Foto = foto;
-            this.Video = video;
-            this.TglUpload = tglUpload;
-            this.Tag = tag;
+        }
+        public Konten() //Buffer Konten
+        {
+            this.Caption = "caption";
+            this.Foto = "null";
+            this.Video = "null";
+            this.Tag = new List<User>();
         }
 
         public int Id { get => id; set => id = value; }

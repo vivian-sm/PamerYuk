@@ -46,7 +46,7 @@ namespace PamerYukFormsApp.Prototype
         private void FormTeman_Load(object sender, EventArgs e)
         {
 
-            comboBoxOrganisasi.DataSource = FormUtama.service.ListOrganisasi;
+            comboBoxOrganisasi.DataSource = FormUtama.service.Lihat_Organisasi_User();
             comboBoxOrganisasi.DisplayMember = "Nama";
             comboBoxOrganisasi.SelectedIndex = -1;
         }

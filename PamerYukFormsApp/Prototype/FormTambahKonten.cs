@@ -63,6 +63,7 @@ namespace PamerYukFormsApp.Prototype
         private void FormTambahKonten_Load(object sender, EventArgs e)
         {
             pictureBoxMedia.Visible = false;
+            FormUtama.service.Initiate_Konten();
         }
 
 

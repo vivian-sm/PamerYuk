@@ -101,3 +101,157 @@ E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Chat.resources
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Profile.resources
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.AssemblyReference.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.ResolveComReference.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.MainForm.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Chat.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarDataDiri.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarUsername.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Home.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Login.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Profile.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkun.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkunTeman.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftar.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarTeman.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKisahHidup.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormMasuk.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormPercakapan.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormRequestPertemanan.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahOrganisasi.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTeman.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.FormUtama.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Properties.Resources.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.GenerateResource.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe.config
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.pdb
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\System.Memory.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\System.Buffers.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.pdb
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.CopyComplete
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKisahHidup.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahOrganisasi.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.UC_KontenSaya.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_CariTeman.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarKonten.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_KontenDetail.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ChatListItem.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ProfilTeman.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananMasuk.resources
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananTerkirim.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.ResolveComReference.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.MainForm.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.UC_KontenSaya.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_CariTeman.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Chat.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarDataDiri.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarKonten.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarUsername.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_KontenDetail.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ChatListItem.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ProfilTeman.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananMasuk.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananTerkirim.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKisahHidup.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Home.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Login.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Profile.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKonten.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahOrganisasi.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkun.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkunTeman.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftar.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarKonten.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarTeman.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKisahHidup.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKonten.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormMasuk.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormPercakapan.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormRequestPertemanan.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahKonten.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahOrganisasi.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTeman.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.FormUtama.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Properties.Resources.resources
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.GenerateResource.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe.config
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.pdb
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.pdb
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYuk.DC7583D1.Up2Date
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe.config
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.AssemblyReference.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.ResolveComReference.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.MainForm.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.UC_KontenSaya.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_CariTeman.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Chat.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarDataDiri.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarKonten.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_DaftarUsername.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_KontenDetail.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ChatListItem.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_ProfilTeman.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananMasuk.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_RequestPertemananTerkirim.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKisahHidup.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Home.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Login.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_Profile.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahKonten.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.UC_TambahOrganisasi.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkun.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormAkunTeman.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftar.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarKonten.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormDaftarTeman.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKisahHidup.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormKonten.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormMasuk.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormPercakapan.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormRequestPertemanan.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahKonten.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTambahOrganisasi.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype.FormTeman.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.FormUtama.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Properties.Resources.resources
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.GenerateResource.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYuk.DC7583D1.Up2Date
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
+C:\Users\joshu\source\repos\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb

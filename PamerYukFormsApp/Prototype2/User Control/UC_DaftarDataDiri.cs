@@ -15,7 +15,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_DaftarDataDiri : UserControl
     {
         MainForm mainForm;
-        FileDialog fileDialog;
+        FileDialog fileDialogFotoProfil;
+        FileDialog fileDialogFotoDiri;
         public string username = "";
         public string password = "";
         public string confirm_password = "";
@@ -36,17 +37,24 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonDaftar_Click(object sender, EventArgs e)
         {
+            string namaLengkap = textBoxNamaLengkap.Text;
             string noKTP = textBoxNoKtp.Text;
             Kota selected_kota = (Kota)comboBoxKota.SelectedItem;
             DateTime tanggalLahir = dateTimePickerTglLahir.Value.Date;
-            string profile_picture = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
-            if (fileDialog.FileName != null)
+            string fotoDiri = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
+            string fotoProfil = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
+            if (fileDialogFotoDiri.FileName != null)
             {
-                profile_picture = fileDialog.FileName;
+                fotoDiri = fileDialogFotoDiri.FileName;
             }
-            MainForm.service.Daftar(username, password, tanggalLahir, noKTP, profile_picture, selected_kota);
+            if (fileDialogFotoProfil.FileName != null)
+            {
+                fotoProfil = fileDialogFotoProfil.FileName;
+            }
+            string email = textBoxEmail.Text;
+            MainForm.service.Daftar(username, password, namaLengkap, tanggalLahir, noKTP, fotoDiri, fotoProfil, email,selected_kota);
 
-            MessageBox.Show("Berhasil membuat akun");
+            MessageBox.Show("Account is succesfully created");
 
             this.pictureBox2.Image = Properties.Resources.Checked_true;
             //Proses login selesai, User Control close, Clear object yg show di panelUtama
@@ -66,19 +74,25 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         }
 
-        private void buttonUploadImage_Click(object sender, EventArgs e)
+        private void UC_DaftarDataDiri_Load(object sender, EventArgs e)
+        {
+            comboBoxKota.DataSource = FormUtama.service.ListKota;
+            comboBoxKota.DisplayMember = "Nama";
+        }
+
+        private void buttonUploadFotoProfil_Click(object sender, EventArgs e)
         {
             try
             {
-                fileDialog = new OpenFileDialog();
-                if (fileDialog.ShowDialog() == DialogResult.OK)
+                fileDialogFotoProfil = new OpenFileDialog();
+                if (fileDialogFotoProfil.ShowDialog() == DialogResult.OK)
                 {
-                    if (Path.GetExtension(fileDialog.FileName) == ".jpg")
+                    if (Path.GetExtension(fileDialogFotoProfil.FileName) == ".jpg")
                     {
-                        Image selectedImage = new Bitmap(fileDialog.FileName);
-                        panelFoto.BackgroundImage = selectedImage;
-                        panelFoto.BackgroundImageLayout = ImageLayout.Zoom;
-                        panelFoto.Visible = true;
+                        Image selectedImageFotoProfil = new Bitmap(fileDialogFotoProfil.FileName);
+                        panelFotoProfil.BackgroundImage = selectedImageFotoProfil;
+                        panelFotoProfil.BackgroundImageLayout = ImageLayout.Zoom;
+                        panelFotoProfil.Visible = true;
                     }
                     else
                     {
@@ -92,10 +106,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
         }
 
-        private void UC_DaftarDataDiri_Load(object sender, EventArgs e)
+        private void buttonUploadFotoDiri_Click(object sender, EventArgs e)
         {
-            comboBoxKota.DataSource = FormUtama.service.ListKota;
-            comboBoxKota.DisplayMember = "Nama";
+            try
+            {
+                fileDialogFotoDiri = new OpenFileDialog();
+                if (fileDialogFotoDiri.ShowDialog() == DialogResult.OK)
+                {
+                    if (Path.GetExtension(fileDialogFotoDiri.FileName) == ".jpg")
+                    {
+                        Image selectedImageFotoDiri = new Bitmap(fileDialogFotoDiri.FileName);
+                        panelFotoDiri.BackgroundImage = selectedImageFotoDiri;
+                        panelFotoDiri.BackgroundImageLayout = ImageLayout.Zoom;
+                        panelFotoDiri.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Only support jpg.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

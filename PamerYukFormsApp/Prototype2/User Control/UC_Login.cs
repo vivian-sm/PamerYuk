@@ -40,19 +40,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 string username = textBoxUsername.Text;
                 string password = textBoxPassword.Text;
                 Console.WriteLine(username + ":" + password);
-                FormUtama.service.LogIn(username, password);
-                confirmLogin = true;
-
+                MainForm.service.LogIn(username, password);
+                MainForm.service.OnLoad();
+                
                 //Proses login selesai, User Control close, Clear object yg show di panelUtama
                 mainForm.panelUtama.Controls.Remove(this);
                 UC_Home uc_home = new UC_Home(mainForm);
                 mainForm.panelUtama.Controls.Add(uc_home);
-
-                /*mainForm.panelUtama.Show();*/
-                mainForm.FormBorderStyle = FormBorderStyle.Sizable;
-                mainForm.MaximizeBox = true;
-                mainForm.MinimizeBox = true;
-
                 mainForm.panel1.Show();
             }
             catch (Exception ex)

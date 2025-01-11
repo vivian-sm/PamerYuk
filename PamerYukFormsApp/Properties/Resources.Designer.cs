@@ -153,9 +153,39 @@ namespace PamerYukFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Like_false {
+            get {
+                object obj = ResourceManager.GetObject("Like-false", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Like_true {
+            get {
+                object obj = ResourceManager.GetObject("Like-true", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_rafiki {
             get {
                 object obj = ResourceManager.GetObject("Login-rafiki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PencilEdit {
+            get {
+                object obj = ResourceManager.GetObject("PencilEdit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +216,16 @@ namespace PamerYukFormsApp.Properties {
         internal static System.Drawing.Bitmap Self_confidence_bro {
             get {
                 object obj = ResourceManager.GetObject("Self confidence-bro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SendMessage {
+            get {
+                object obj = ResourceManager.GetObject("SendMessage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

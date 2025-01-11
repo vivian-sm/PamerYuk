@@ -6,3 +6,29 @@ C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukLibrary\obj\Debug\PamerYukL
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
 C:\Users\joshu\source\repos\PamerYukFormsApp\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\System.Memory.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\System.Buffers.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CopyComplete
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+C:\Users\Candy\Desktop\Semester 3\DATABASE\PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\MySql.Data.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb

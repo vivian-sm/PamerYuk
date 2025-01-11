@@ -12,17 +12,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_TambahKonten : UserControl
     {
-        MainForm mainForm;
-        public UC_TambahKonten(MainForm mainForm)
+        UC_DaftarKonten uc;
+        public UC_TambahKonten(UC_DaftarKonten uc)
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            this.uc = uc;
         }
 
-        private void UC_TambahKonten_Load(object sender, EventArgs e)
+        private void UC_TambahKonten_Load_1(object sender, EventArgs e)
         {
-            mainForm.panel1.Show();
-            mainForm.panel1.BringToFront();
+            MainForm.service.Initiate_Konten();
+
+        }
+
+        private void textBoxCaption_TextChanged(object sender, EventArgs e)
+        {
+            textBoxCaption.Clear();
+        }
+
+        private void textBoxCaption_Click(object sender, EventArgs e)
+        {
+            if (textBoxCaption.Text == "Caption")
+            {
+                textBoxCaption.Clear();
+            }
         }
     }
 }

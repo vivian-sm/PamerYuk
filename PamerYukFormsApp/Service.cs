@@ -58,14 +58,24 @@ namespace PamerYukFormsApp
             this.Current_user = DAO_Users.User_Log_In(username, password);
         }
 
-        public void Daftar(string username, string password, DateTime tglLahir, string noKTP, string foto, Kota kota)
+        public void Daftar(string username, string password, string namaLengkap, DateTime tglLahir, string noKTP, string fotoDiri, string fotoProfil, string email, Kota kota)
         {
-            string newFotoPath = New_ProfilePictureFileName(username);
-            File.Copy(foto, Path.Combine(this.MediafilePath, newFotoPath));
-            User new_user = new User(username, password, tglLahir, noKTP,Path.Combine(this.MediafilePath,newFotoPath), kota);
-            DAO_Users.User_Daftar(username, password, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoPath), kota);
+            string newFotoDiriPath = New_ProfilePictureFileName(username + "_fotoDiri");
+            File.Copy(fotoDiri, Path.Combine(this.MediafilePath, newFotoDiriPath));
+            string newFotoProfilPath = New_ProfilePictureFileName(username + "_fotoProfil");
+            File.Copy(fotoProfil, Path.Combine(this.MediafilePath, newFotoProfilPath));
+            User new_user = new User(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePath,newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
+            DAO_Users.User_Daftar(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
             this.Current_user = new_user;
         }
+        public void UpdateFotoDiri(string username, string fotoDiri)
+        {
+            string newFotoDiriPath = New_ProfilePictureFileName(username + "_fotoDiri");
+            File.Copy(fotoDiri, Path.Combine(this.MediafilePath, newFotoDiriPath));
+            DAO_Users.Update_UserFotoDiri(username, Path.Combine(this.MediafilePath, newFotoDiriPath));
+            //this.Current_user = new_user;
+        }
+
 
         #endregion
 

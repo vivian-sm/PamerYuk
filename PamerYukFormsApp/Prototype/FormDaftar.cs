@@ -36,7 +36,7 @@ namespace PamerYukFormsApp.Prototype
 
             if (CheckPassword(password,confirm_password))
             {
-                FormUtama.service.Daftar(username, password, tanggalLahir, noKTP, profile_picture, selected_kota);
+                //FormUtama.service.Daftar(username, password, tanggalLahir, noKTP, profile_picture, selected_kota);
                 this.Close();
             }
             else

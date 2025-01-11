@@ -60,6 +60,18 @@
     <Compile Include="Prototype2\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_KontenSaya.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_KontenSaya.Designer.cs">
+      <DependentUpon>UC_KontenSaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_CariTeman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_CariTeman.Designer.cs">
+      <DependentUpon>UC_CariTeman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\User Control\UC_Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,11 +84,53 @@
     <Compile Include="Prototype2\User Control\UC_DaftarDataDiri.Designer.cs">
       <DependentUpon>UC_DaftarDataDiri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarKonten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_DaftarKonten.Designer.cs">
+      <DependentUpon>UC_DaftarKonten.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\User Control\UC_DaftarUsername.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_DaftarUsername.Designer.cs">
       <DependentUpon>UC_DaftarUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_KontenDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_KontenDetail.Designer.cs">
+      <DependentUpon>UC_KontenDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ChatListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ChatListItem.Designer.cs">
+      <DependentUpon>UC_ChatListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfilTeman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfilTeman.Designer.cs">
+      <DependentUpon>UC_ProfilTeman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_RequestPertemananMasuk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_RequestPertemananMasuk.Designer.cs">
+      <DependentUpon>UC_RequestPertemananMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_RequestPertemananTerkirim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_RequestPertemananTerkirim.Designer.cs">
+      <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahKisahHidup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahKisahHidup.Designer.cs">
+      <DependentUpon>UC_TambahKisahHidup.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_Home.cs">
       <SubType>UserControl</SubType>
@@ -101,6 +155,12 @@
     </Compile>
     <Compile Include="Prototype2\User Control\UC_TambahKonten.Designer.cs">
       <DependentUpon>UC_TambahKonten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahOrganisasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahOrganisasi.Designer.cs">
+      <DependentUpon>UC_TambahOrganisasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype\FormAkun.cs">
       <SubType>Form</SubType>
@@ -192,14 +252,41 @@
     <EmbeddedResource Include="Prototype2\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_KontenSaya.resx">
+      <DependentUpon>UC_KontenSaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_CariTeman.resx">
+      <DependentUpon>UC_CariTeman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_Chat.resx">
       <DependentUpon>UC_Chat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_DaftarDataDiri.resx">
       <DependentUpon>UC_DaftarDataDiri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_DaftarKonten.resx">
+      <DependentUpon>UC_DaftarKonten.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_DaftarUsername.resx">
       <DependentUpon>UC_DaftarUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_KontenDetail.resx">
+      <DependentUpon>UC_KontenDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_ChatListItem.resx">
+      <DependentUpon>UC_ChatListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_ProfilTeman.resx">
+      <DependentUpon>UC_ProfilTeman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_RequestPertemananMasuk.resx">
+      <DependentUpon>UC_RequestPertemananMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_RequestPertemananTerkirim.resx">
+      <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_TambahKisahHidup.resx">
+      <DependentUpon>UC_TambahKisahHidup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
@@ -212,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_TambahKonten.resx">
       <DependentUpon>UC_TambahKonten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_TambahOrganisasi.resx">
+      <DependentUpon>UC_TambahOrganisasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormAkun.resx">
       <DependentUpon>FormAkun.cs</DependentUpon>
@@ -346,6 +436,23 @@
   <ItemGroup>
     <None Include="Resources\Tambahkonten-true.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\edit-pencil.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PencilEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditPencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Like-false.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Like-true.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendMessage.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

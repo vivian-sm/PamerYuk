@@ -21,6 +21,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_TambahKonten_Load_1(object sender, EventArgs e)
         {
+            MainForm.service.Initiate_Konten();
 
         }
 

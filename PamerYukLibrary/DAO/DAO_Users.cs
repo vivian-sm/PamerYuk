@@ -64,10 +64,17 @@ namespace PamerYukLibrary.DAO
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 
-        public static void Update_UserFotoDiri(string username, string fotoDiri)
+        public static void Update_User(string current_username, string new_usn,string new_nama, DateTime new_date, string new_ktp, string new_fd, string new_fp, string new_email, Kota new_kota)
         {
-            string command = "UPDATE `pameryuk`.`user` SET `fotoDiri`='" +fotoDiri+ "' WHERE `username`='" +username+ "';";
-            KoneksiDatabase.DatabaseDMLCommand(command);
+            try
+            {
+                string command = "UPDATE `pameryuk`.`user` SET `username`='"+new_usn+ "', `namaLengkap`='"+new_nama+"', `tglLahir`='"+new_date.ToString("yyyy-MM-dd") +"', `noKTP`='"+new_ktp+"', `fotoDiri`='"+new_fd+ "', `fotoProfil`='"+new_fd+ "', `email`='"+new_email+"', `Kota_id`='"+new_kota.Id+"' WHERE `username`='" + current_username+"';";
+                KoneksiDatabase.DatabaseDMLCommand(command);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Update error : " + ex.Message);
+            }
         }
 
 

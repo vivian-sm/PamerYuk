@@ -24,3 +24,11 @@ C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\Pamer
 C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
 C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
 C:\Users\USER\Downloads\PamerYuk (vivi)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\bin\Debug\MySql.Data.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb

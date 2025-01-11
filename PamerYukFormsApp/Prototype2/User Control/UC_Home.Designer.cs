@@ -57,10 +57,10 @@
             this.labelPertemananTerkirim.AutoSize = true;
             this.labelPertemananTerkirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPertemananTerkirim.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelPertemananTerkirim.Location = new System.Drawing.Point(677, 53);
-            this.labelPertemananTerkirim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPertemananTerkirim.Location = new System.Drawing.Point(1204, 82);
+            this.labelPertemananTerkirim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPertemananTerkirim.Name = "labelPertemananTerkirim";
-            this.labelPertemananTerkirim.Size = new System.Drawing.Size(90, 25);
+            this.labelPertemananTerkirim.Size = new System.Drawing.Size(148, 39);
             this.labelPertemananTerkirim.TabIndex = 46;
             this.labelPertemananTerkirim.Text = "Terkirim";
             this.labelPertemananTerkirim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,10 +72,10 @@
             this.labelRequestPertemanan.AutoSize = true;
             this.labelRequestPertemanan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRequestPertemanan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelRequestPertemanan.Location = new System.Drawing.Point(509, 15);
-            this.labelRequestPertemanan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRequestPertemanan.Location = new System.Drawing.Point(905, 23);
+            this.labelRequestPertemanan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRequestPertemanan.Name = "labelRequestPertemanan";
-            this.labelRequestPertemanan.Size = new System.Drawing.Size(258, 29);
+            this.labelRequestPertemanan.Size = new System.Drawing.Size(413, 46);
             this.labelRequestPertemanan.TabIndex = 42;
             this.labelRequestPertemanan.Text = "Request Pertemenan";
             this.labelRequestPertemanan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,9 +87,10 @@
             this.panelRequestPertemenan.Controls.Add(this.labelPertemananMasuk);
             this.panelRequestPertemenan.Controls.Add(this.labelRequestPertemanan);
             this.panelRequestPertemenan.Controls.Add(this.flowLayoutPanelRequestPertemanan);
-            this.panelRequestPertemenan.Location = new System.Drawing.Point(2, 453);
+            this.panelRequestPertemenan.Location = new System.Drawing.Point(4, 702);
+            this.panelRequestPertemenan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panelRequestPertemenan.Name = "panelRequestPertemenan";
-            this.panelRequestPertemenan.Size = new System.Drawing.Size(1277, 325);
+            this.panelRequestPertemenan.Size = new System.Drawing.Size(2270, 504);
             this.panelRequestPertemenan.TabIndex = 47;
             // 
             // labelPertemananMasuk
@@ -98,10 +99,10 @@
             this.labelPertemananMasuk.AutoSize = true;
             this.labelPertemananMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPertemananMasuk.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelPertemananMasuk.Location = new System.Drawing.Point(509, 53);
-            this.labelPertemananMasuk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPertemananMasuk.Location = new System.Drawing.Point(905, 82);
+            this.labelPertemananMasuk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPertemananMasuk.Name = "labelPertemananMasuk";
-            this.labelPertemananMasuk.Size = new System.Drawing.Size(76, 25);
+            this.labelPertemananMasuk.Size = new System.Drawing.Size(122, 39);
             this.labelPertemananMasuk.TabIndex = 45;
             this.labelPertemananMasuk.Text = "Masuk";
             this.labelPertemananMasuk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,18 +111,20 @@
             // flowLayoutPanelRequestPertemanan
             // 
             this.flowLayoutPanelRequestPertemanan.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.flowLayoutPanelRequestPertemanan.Location = new System.Drawing.Point(-1, 98);
+            this.flowLayoutPanelRequestPertemanan.Location = new System.Drawing.Point(-2, 152);
+            this.flowLayoutPanelRequestPertemanan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.flowLayoutPanelRequestPertemanan.Name = "flowLayoutPanelRequestPertemanan";
-            this.flowLayoutPanelRequestPertemanan.Size = new System.Drawing.Size(1278, 178);
+            this.flowLayoutPanelRequestPertemanan.Size = new System.Drawing.Size(2272, 276);
             this.flowLayoutPanelRequestPertemanan.TabIndex = 44;
             // 
             // panelCariTeman
             // 
             this.panelCariTeman.Controls.Add(this.labelCariTeman);
             this.panelCariTeman.Controls.Add(this.buttonCariTeman);
-            this.panelCariTeman.Location = new System.Drawing.Point(-1, 390);
+            this.panelCariTeman.Location = new System.Drawing.Point(-2, 604);
+            this.panelCariTeman.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panelCariTeman.Name = "panelCariTeman";
-            this.panelCariTeman.Size = new System.Drawing.Size(1280, 68);
+            this.panelCariTeman.Size = new System.Drawing.Size(2276, 105);
             this.panelCariTeman.TabIndex = 46;
             // 
             // labelCariTeman
@@ -130,10 +133,10 @@
             this.labelCariTeman.AutoSize = true;
             this.labelCariTeman.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCariTeman.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelCariTeman.Location = new System.Drawing.Point(34, 20);
-            this.labelCariTeman.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCariTeman.Location = new System.Drawing.Point(60, 31);
+            this.labelCariTeman.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCariTeman.Name = "labelCariTeman";
-            this.labelCariTeman.Size = new System.Drawing.Size(241, 29);
+            this.labelCariTeman.Size = new System.Drawing.Size(392, 46);
             this.labelCariTeman.TabIndex = 40;
             this.labelCariTeman.Text = "Butuh Teman Baru?";
             this.labelCariTeman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,10 +148,10 @@
             this.buttonCariTeman.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCariTeman.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCariTeman.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonCariTeman.Location = new System.Drawing.Point(299, 10);
-            this.buttonCariTeman.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCariTeman.Location = new System.Drawing.Point(532, 16);
+            this.buttonCariTeman.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCariTeman.Name = "buttonCariTeman";
-            this.buttonCariTeman.Size = new System.Drawing.Size(920, 48);
+            this.buttonCariTeman.Size = new System.Drawing.Size(1636, 74);
             this.buttonCariTeman.TabIndex = 41;
             this.buttonCariTeman.Text = "Cari Teman";
             this.buttonCariTeman.UseVisualStyleBackColor = false;
@@ -158,19 +161,21 @@
             // 
             this.panelDaftarTeman.Controls.Add(this.dataGridViewDaftarTeman);
             this.panelDaftarTeman.Controls.Add(this.labelDaftarTeman);
-            this.panelDaftarTeman.Location = new System.Drawing.Point(2, 95);
+            this.panelDaftarTeman.Location = new System.Drawing.Point(4, 147);
+            this.panelDaftarTeman.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panelDaftarTeman.Name = "panelDaftarTeman";
-            this.panelDaftarTeman.Size = new System.Drawing.Size(1277, 296);
+            this.panelDaftarTeman.Size = new System.Drawing.Size(2270, 459);
             this.panelDaftarTeman.TabIndex = 45;
             // 
             // dataGridViewDaftarTeman
             // 
             this.dataGridViewDaftarTeman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDaftarTeman.Location = new System.Drawing.Point(35, 49);
+            this.dataGridViewDaftarTeman.Location = new System.Drawing.Point(62, 76);
+            this.dataGridViewDaftarTeman.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dataGridViewDaftarTeman.Name = "dataGridViewDaftarTeman";
             this.dataGridViewDaftarTeman.RowHeadersWidth = 62;
             this.dataGridViewDaftarTeman.RowTemplate.Height = 28;
-            this.dataGridViewDaftarTeman.Size = new System.Drawing.Size(1182, 228);
+            this.dataGridViewDaftarTeman.Size = new System.Drawing.Size(2101, 353);
             this.dataGridViewDaftarTeman.TabIndex = 43;
             this.dataGridViewDaftarTeman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDaftarTeman_CellContentClick);
             // 
@@ -180,10 +185,10 @@
             this.labelDaftarTeman.AutoSize = true;
             this.labelDaftarTeman.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDaftarTeman.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelDaftarTeman.Location = new System.Drawing.Point(31, 10);
-            this.labelDaftarTeman.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDaftarTeman.Location = new System.Drawing.Point(55, 16);
+            this.labelDaftarTeman.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDaftarTeman.Name = "labelDaftarTeman";
-            this.labelDaftarTeman.Size = new System.Drawing.Size(160, 29);
+            this.labelDaftarTeman.Size = new System.Drawing.Size(257, 46);
             this.labelDaftarTeman.TabIndex = 42;
             this.labelDaftarTeman.Text = "Teman Anda";
             this.labelDaftarTeman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -191,9 +196,10 @@
             // labelHariIni
             // 
             this.labelHariIni.AutoSize = true;
-            this.labelHariIni.Location = new System.Drawing.Point(1009, 62);
+            this.labelHariIni.Location = new System.Drawing.Point(1794, 96);
+            this.labelHariIni.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelHariIni.Name = "labelHariIni";
-            this.labelHariIni.Size = new System.Drawing.Size(78, 20);
+            this.labelHariIni.Size = new System.Drawing.Size(137, 32);
             this.labelHariIni.TabIndex = 47;
             this.labelHariIni.Text = "DateTime";
             // 
@@ -203,10 +209,10 @@
             this.labelPamerYuk.AutoSize = true;
             this.labelPamerYuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPamerYuk.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelPamerYuk.Location = new System.Drawing.Point(1003, 13);
-            this.labelPamerYuk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPamerYuk.Location = new System.Drawing.Point(1783, 20);
+            this.labelPamerYuk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPamerYuk.Name = "labelPamerYuk";
-            this.labelPamerYuk.Size = new System.Drawing.Size(213, 46);
+            this.labelPamerYuk.Size = new System.Drawing.Size(353, 76);
             this.labelPamerYuk.TabIndex = 46;
             this.labelPamerYuk.Text = "PamerYuk";
             this.labelPamerYuk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,10 +223,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(31, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(55, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 25);
+            this.label2.Size = new System.Drawing.Size(105, 39);
             this.label2.TabIndex = 45;
             this.label2.Text = "Hallo,";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,10 +237,10 @@
             this.labelCurrentUser.AutoSize = true;
             this.labelCurrentUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCurrentUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelCurrentUser.Location = new System.Drawing.Point(29, 49);
-            this.labelCurrentUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCurrentUser.Location = new System.Drawing.Point(52, 76);
+            this.labelCurrentUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCurrentUser.Name = "labelCurrentUser";
-            this.labelCurrentUser.Size = new System.Drawing.Size(221, 37);
+            this.labelCurrentUser.Size = new System.Drawing.Size(363, 63);
             this.labelCurrentUser.TabIndex = 44;
             this.labelCurrentUser.Text = "Current_User";
             this.labelCurrentUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -246,21 +252,24 @@
             this.panelHeader.Controls.Add(this.labelPamerYuk);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.labelCurrentUser);
-            this.panelHeader.Location = new System.Drawing.Point(1, 0);
+            this.panelHeader.Location = new System.Drawing.Point(2, 0);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1278, 104);
+            this.panelHeader.Size = new System.Drawing.Size(2272, 161);
             this.panelHeader.TabIndex = 44;
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // UC_Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelRequestPertemenan);
             this.Controls.Add(this.panelCariTeman);
             this.Controls.Add(this.panelDaftarTeman);
             this.Controls.Add(this.panelHeader);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_Home";
-            this.Size = new System.Drawing.Size(1278, 778);
+            this.Size = new System.Drawing.Size(2272, 1206);
             this.Load += new System.EventHandler(this.UC_Home_Load);
             this.panelRequestPertemenan.ResumeLayout(false);
             this.panelRequestPertemenan.PerformLayout();

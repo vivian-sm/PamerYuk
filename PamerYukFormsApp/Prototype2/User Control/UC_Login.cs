@@ -41,21 +41,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 string password = textBoxPassword.Text;
                 Console.WriteLine(username + ":" + password);
                 MainForm.service.LogIn(username, password);
-                confirmLogin = true;
-                Console.WriteLine("Current User : " + MainForm.service.Current_user.ToString());
-
-                if (confirmLogin)
-                {
-                    MainForm.service.OnLoad();
-                }
-                Console.WriteLine("Confirm Login = " + confirmLogin.ToString());
-                Console.WriteLine("List Friend = " + MainForm.service.ListTeman.ToString());
-
+                MainForm.service.OnLoad();
+                
                 //Proses login selesai, User Control close, Clear object yg show di panelUtama
                 mainForm.panelUtama.Controls.Remove(this);
                 UC_Home uc_home = new UC_Home(mainForm);
                 mainForm.panelUtama.Controls.Add(uc_home);
-
                 mainForm.panel1.Show();
             }
             catch (Exception ex)

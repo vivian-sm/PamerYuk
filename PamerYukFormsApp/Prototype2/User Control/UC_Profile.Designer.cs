@@ -65,21 +65,23 @@
             this.buttonSimpanUpdateProfile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonSimpanUpdateProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpanUpdateProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSimpanUpdateProfile.Location = new System.Drawing.Point(338, 483);
-            this.buttonSimpanUpdateProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSimpanUpdateProfile.Location = new System.Drawing.Point(601, 749);
+            this.buttonSimpanUpdateProfile.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSimpanUpdateProfile.Name = "buttonSimpanUpdateProfile";
-            this.buttonSimpanUpdateProfile.Size = new System.Drawing.Size(586, 50);
+            this.buttonSimpanUpdateProfile.Size = new System.Drawing.Size(1042, 78);
             this.buttonSimpanUpdateProfile.TabIndex = 62;
             this.buttonSimpanUpdateProfile.Text = "Simpan";
             this.buttonSimpanUpdateProfile.UseVisualStyleBackColor = false;
+            this.buttonSimpanUpdateProfile.Click += new System.EventHandler(this.buttonSimpanUpdateProfile_Click);
             // 
             // listBoxKisahHidup
             // 
             this.listBoxKisahHidup.FormattingEnabled = true;
-            this.listBoxKisahHidup.ItemHeight = 20;
-            this.listBoxKisahHidup.Location = new System.Drawing.Point(947, 166);
+            this.listBoxKisahHidup.ItemHeight = 31;
+            this.listBoxKisahHidup.Location = new System.Drawing.Point(1684, 257);
+            this.listBoxKisahHidup.Margin = new System.Windows.Forms.Padding(5);
             this.listBoxKisahHidup.Name = "listBoxKisahHidup";
-            this.listBoxKisahHidup.Size = new System.Drawing.Size(263, 304);
+            this.listBoxKisahHidup.Size = new System.Drawing.Size(464, 469);
             this.listBoxKisahHidup.TabIndex = 79;
             // 
             // panelFotoDiri
@@ -89,10 +91,10 @@
             this.panelFotoDiri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelFotoDiri.Controls.Add(this.buttonEditFotoDiri);
             this.panelFotoDiri.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelFotoDiri.Location = new System.Drawing.Point(122, 122);
-            this.panelFotoDiri.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFotoDiri.Location = new System.Drawing.Point(217, 189);
+            this.panelFotoDiri.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelFotoDiri.Name = "panelFotoDiri";
-            this.panelFotoDiri.Size = new System.Drawing.Size(150, 150);
+            this.panelFotoDiri.Size = new System.Drawing.Size(267, 232);
             this.panelFotoDiri.TabIndex = 60;
             // 
             // buttonEditFotoDiri
@@ -104,10 +106,10 @@
             this.buttonEditFotoDiri.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonEditFotoDiri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditFotoDiri.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEditFotoDiri.Location = new System.Drawing.Point(100, 99);
-            this.buttonEditFotoDiri.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditFotoDiri.Location = new System.Drawing.Point(178, 153);
+            this.buttonEditFotoDiri.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonEditFotoDiri.Name = "buttonEditFotoDiri";
-            this.buttonEditFotoDiri.Size = new System.Drawing.Size(50, 51);
+            this.buttonEditFotoDiri.Size = new System.Drawing.Size(89, 79);
             this.buttonEditFotoDiri.TabIndex = 80;
             this.buttonEditFotoDiri.UseVisualStyleBackColor = false;
             this.buttonEditFotoDiri.Click += new System.EventHandler(this.buttonEditFotoDiri_Click);
@@ -119,10 +121,10 @@
             this.panelFotoProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelFotoProfil.Controls.Add(this.buttonEditFotoProfil);
             this.panelFotoProfil.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelFotoProfil.Location = new System.Drawing.Point(122, 358);
-            this.panelFotoProfil.Margin = new System.Windows.Forms.Padding(2);
+            this.panelFotoProfil.Location = new System.Drawing.Point(217, 555);
+            this.panelFotoProfil.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelFotoProfil.Name = "panelFotoProfil";
-            this.panelFotoProfil.Size = new System.Drawing.Size(150, 150);
+            this.panelFotoProfil.Size = new System.Drawing.Size(267, 232);
             this.panelFotoProfil.TabIndex = 81;
             // 
             // buttonEditFotoProfil
@@ -134,10 +136,10 @@
             this.buttonEditFotoProfil.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonEditFotoProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditFotoProfil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEditFotoProfil.Location = new System.Drawing.Point(100, 97);
-            this.buttonEditFotoProfil.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditFotoProfil.Location = new System.Drawing.Point(178, 150);
+            this.buttonEditFotoProfil.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonEditFotoProfil.Name = "buttonEditFotoProfil";
-            this.buttonEditFotoProfil.Size = new System.Drawing.Size(50, 51);
+            this.buttonEditFotoProfil.Size = new System.Drawing.Size(89, 79);
             this.buttonEditFotoProfil.TabIndex = 80;
             this.buttonEditFotoProfil.UseVisualStyleBackColor = false;
             this.buttonEditFotoProfil.Click += new System.EventHandler(this.buttonEditFotoProfil_Click);
@@ -147,10 +149,10 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(932, 57);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(1657, 88);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(285, 46);
+            this.label10.Size = new System.Drawing.Size(471, 76);
             this.label10.TabIndex = 86;
             this.label10.Text = "KISAH HIDUP";
             // 
@@ -163,9 +165,10 @@
             this.panelInformation.Controls.Add(this.panelFotoProfil);
             this.panelInformation.Controls.Add(this.label11);
             this.panelInformation.Controls.Add(this.panelFotoDiri);
-            this.panelInformation.Location = new System.Drawing.Point(-42, -2);
+            this.panelInformation.Location = new System.Drawing.Point(-75, -3);
+            this.panelInformation.Margin = new System.Windows.Forms.Padding(5);
             this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(349, 780);
+            this.panelInformation.Size = new System.Drawing.Size(620, 1209);
             this.panelInformation.TabIndex = 88;
             // 
             // label6
@@ -173,10 +176,10 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(117, 286);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(208, 443);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 29);
+            this.label6.Size = new System.Drawing.Size(227, 46);
             this.label6.TabIndex = 90;
             this.label6.Text = "Foto Profil:";
             // 
@@ -185,10 +188,10 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(117, 52);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(208, 81);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 29);
+            this.label11.Size = new System.Drawing.Size(193, 46);
             this.label11.TabIndex = 89;
             this.label11.Text = "Foto Diri:";
             // 
@@ -197,10 +200,10 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(327, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(581, 60);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(409, 64);
+            this.label5.Size = new System.Drawing.Size(682, 107);
             this.label5.TabIndex = 89;
             this.label5.Text = "PROFIL AKUN";
             // 
@@ -211,10 +214,10 @@
             this.buttonTambahKisahHidup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonTambahKisahHidup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTambahKisahHidup.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonTambahKisahHidup.Location = new System.Drawing.Point(944, 483);
-            this.buttonTambahKisahHidup.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonTambahKisahHidup.Location = new System.Drawing.Point(1678, 749);
+            this.buttonTambahKisahHidup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonTambahKisahHidup.Name = "buttonTambahKisahHidup";
-            this.buttonTambahKisahHidup.Size = new System.Drawing.Size(270, 50);
+            this.buttonTambahKisahHidup.Size = new System.Drawing.Size(480, 78);
             this.buttonTambahKisahHidup.TabIndex = 89;
             this.buttonTambahKisahHidup.Text = "Tambah Kisah Hidup";
             this.buttonTambahKisahHidup.UseVisualStyleBackColor = false;
@@ -223,20 +226,20 @@
             // dateTimePickerTglLahir
             // 
             this.dateTimePickerTglLahir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.dateTimePickerTglLahir.Location = new System.Drawing.Point(640, 318);
-            this.dateTimePickerTglLahir.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePickerTglLahir.Location = new System.Drawing.Point(1138, 480);
+            this.dateTimePickerTglLahir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePickerTglLahir.Name = "dateTimePickerTglLahir";
-            this.dateTimePickerTglLahir.Size = new System.Drawing.Size(276, 39);
+            this.dateTimePickerTglLahir.Size = new System.Drawing.Size(488, 60);
             this.dateTimePickerTglLahir.TabIndex = 122;
             // 
             // comboBoxKota
             // 
             this.comboBoxKota.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.comboBoxKota.FormattingEnabled = true;
-            this.comboBoxKota.Location = new System.Drawing.Point(640, 434);
-            this.comboBoxKota.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxKota.Location = new System.Drawing.Point(1138, 664);
+            this.comboBoxKota.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxKota.Name = "comboBoxKota";
-            this.comboBoxKota.Size = new System.Drawing.Size(276, 40);
+            this.comboBoxKota.Size = new System.Drawing.Size(488, 62);
             this.comboBoxKota.TabIndex = 121;
             // 
             // textBoxNoKtp
@@ -245,10 +248,10 @@
             this.textBoxNoKtp.BackColor = System.Drawing.Color.White;
             this.textBoxNoKtp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxNoKtp.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxNoKtp.Location = new System.Drawing.Point(640, 169);
-            this.textBoxNoKtp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNoKtp.Location = new System.Drawing.Point(1138, 262);
+            this.textBoxNoKtp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxNoKtp.Name = "textBoxNoKtp";
-            this.textBoxNoKtp.Size = new System.Drawing.Size(276, 39);
+            this.textBoxNoKtp.Size = new System.Drawing.Size(488, 60);
             this.textBoxNoKtp.TabIndex = 120;
             // 
             // textBoxEmail
@@ -257,10 +260,10 @@
             this.textBoxEmail.BackColor = System.Drawing.Color.White;
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxEmail.Location = new System.Drawing.Point(340, 404);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEmail.Location = new System.Drawing.Point(604, 626);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(273, 39);
+            this.textBoxEmail.Size = new System.Drawing.Size(482, 60);
             this.textBoxEmail.TabIndex = 119;
             // 
             // textBoxUsername
@@ -269,10 +272,10 @@
             this.textBoxUsername.BackColor = System.Drawing.Color.White;
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxUsername.Location = new System.Drawing.Point(340, 287);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxUsername.Location = new System.Drawing.Point(604, 445);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(276, 39);
+            this.textBoxUsername.Size = new System.Drawing.Size(488, 60);
             this.textBoxUsername.TabIndex = 118;
             // 
             // textBoxNamaLengkap
@@ -281,10 +284,10 @@
             this.textBoxNamaLengkap.BackColor = System.Drawing.Color.White;
             this.textBoxNamaLengkap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxNamaLengkap.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxNamaLengkap.Location = new System.Drawing.Point(340, 169);
-            this.textBoxNamaLengkap.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNamaLengkap.Location = new System.Drawing.Point(604, 262);
+            this.textBoxNamaLengkap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxNamaLengkap.Name = "textBoxNamaLengkap";
-            this.textBoxNamaLengkap.Size = new System.Drawing.Size(276, 39);
+            this.textBoxNamaLengkap.Size = new System.Drawing.Size(488, 60);
             this.textBoxNamaLengkap.TabIndex = 117;
             // 
             // label8
@@ -292,10 +295,10 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(335, 358);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(596, 555);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 29);
+            this.label8.Size = new System.Drawing.Size(137, 46);
             this.label8.TabIndex = 116;
             this.label8.Text = "Email:";
             // 
@@ -304,10 +307,10 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(335, 128);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(596, 198);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 29);
+            this.label7.Size = new System.Drawing.Size(313, 46);
             this.label7.TabIndex = 115;
             this.label7.Text = "Nama Lengkap:";
             // 
@@ -316,10 +319,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(335, 240);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(596, 372);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 29);
+            this.label1.Size = new System.Drawing.Size(223, 46);
             this.label1.TabIndex = 114;
             this.label1.Text = "Username:";
             // 
@@ -328,10 +331,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(635, 128);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(1129, 198);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 29);
+            this.label2.Size = new System.Drawing.Size(178, 46);
             this.label2.TabIndex = 113;
             this.label2.Text = "No KTP:";
             // 
@@ -340,10 +343,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(635, 358);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1129, 555);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 29);
+            this.label4.Size = new System.Drawing.Size(118, 46);
             this.label4.TabIndex = 112;
             this.label4.Text = "Kota:";
             // 
@@ -352,16 +355,16 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(635, 241);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(1129, 374);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 29);
+            this.label3.Size = new System.Drawing.Size(287, 46);
             this.label3.TabIndex = 111;
             this.label3.Text = "Tanggal Lahir:";
             // 
             // UC_Profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.dateTimePickerTglLahir);
@@ -382,8 +385,9 @@
             this.Controls.Add(this.listBoxKisahHidup);
             this.Controls.Add(this.buttonSimpanUpdateProfile);
             this.Controls.Add(this.panelInformation);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_Profile";
-            this.Size = new System.Drawing.Size(1278, 778);
+            this.Size = new System.Drawing.Size(2272, 1206);
             this.Load += new System.EventHandler(this.UC_Profile_Load);
             this.panelFotoDiri.ResumeLayout(false);
             this.panelFotoProfil.ResumeLayout(false);

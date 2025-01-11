@@ -60,20 +60,30 @@ namespace PamerYukFormsApp
 
         public void Daftar(string username, string password, string namaLengkap, DateTime tglLahir, string noKTP, string fotoDiri, string fotoProfil, string email, Kota kota)
         {
-            string newFotoDiriPath = New_ProfilePictureFileName(username + "_fotoDiri");
+            string newFotoDiriPath = New_ProfileDiriPictureFileName(username);
+            string newFotoProfilPath = New_ProfilePictureFileName(username);
             File.Copy(fotoDiri, Path.Combine(this.MediafilePath, newFotoDiriPath));
-            string newFotoProfilPath = New_ProfilePictureFileName(username + "_fotoProfil");
             File.Copy(fotoProfil, Path.Combine(this.MediafilePath, newFotoProfilPath));
             User new_user = new User(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePath,newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
-            DAO_Users.User_Daftar(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
+            DAO_Users.User_Daftar(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePathDB, newFotoProfilPath), email, kota);
             this.Current_user = new_user;
         }
-        public void UpdateFotoDiri(string username, string fotoDiri)
+        public void UpdateUser(string new_usn, string new_nama, DateTime new_date, string new_ktp, string new_fd, string new_fp, string new_email, Kota new_kota)
         {
-            string newFotoDiriPath = New_ProfilePictureFileName(username + "_fotoDiri");
-            File.Copy(fotoDiri, Path.Combine(this.MediafilePath, newFotoDiriPath));
-            DAO_Users.Update_UserFotoDiri(username, Path.Combine(this.MediafilePath, newFotoDiriPath));
-            //this.Current_user = new_user;
+            string newFotoDiriPath = New_ProfileDiriPictureFileName(new_usn);
+            string newFotoProfilPath = New_ProfilePictureFileName(new_usn);
+            File.Copy(new_fd, Path.Combine(this.MediafilePath, newFotoDiriPath));
+            File.Copy(new_fp, Path.Combine(this.MediafilePath, newFotoProfilPath));
+            DAO_Users.Update_User(this.Current_user.Username,new_usn,new_nama,new_date,new_ktp,Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePathDB, newFotoProfilPath),new_email,new_kota);
+            this.Current_user.Username = new_usn;
+            this.Current_user.NamaLengkap = new_nama;
+            this.Current_user.TglLahir = new_date;
+            this.Current_user.NoKTP = new_ktp;
+            this.Current_user.FotoDiri = Path.Combine(this.MediafilePath, newFotoDiriPath);
+            this.Current_user.FotoProfil = Path.Combine(this.MediafilePath, newFotoProfilPath);
+            this.Current_user.Email = new_email;
+            this.Current_user.Kota = new_kota;
+
         }
 
 
@@ -239,6 +249,10 @@ namespace PamerYukFormsApp
         private string New_ProfilePictureFileName(string username)
         {
             return username + "xPFPx" + DateTime.Now.ToString("yyyyMMddHHmmss")+".jpg";
+        }
+        private string New_ProfileDiriPictureFileName(string username)
+        {
+            return username + "xPFDx" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
         }
 
         private void CreateDirectory()

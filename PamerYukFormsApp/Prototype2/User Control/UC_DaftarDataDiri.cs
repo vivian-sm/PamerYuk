@@ -15,7 +15,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_DaftarDataDiri : UserControl
     {
         MainForm mainForm;
-        FileDialog fileDialog;
+        FileDialog fileDialogFotoProfil;
+        FileDialog fileDialogFotoDiri;
         public string username = "";
         public string password = "";
         public string confirm_password = "";
@@ -42,18 +43,18 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             DateTime tanggalLahir = dateTimePickerTglLahir.Value.Date;
             string fotoDiri = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
             string fotoProfil = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
-            if (fileDialog.FileName != null)
+            if (fileDialogFotoDiri.FileName != null)
             {
-                fotoDiri = fileDialog.FileName;
+                fotoDiri = fileDialogFotoDiri.FileName;
             }
-            if (fileDialog.FileName != null)
+            if (fileDialogFotoProfil.FileName != null)
             {
-                fotoProfil = fileDialog.FileName;
+                fotoProfil = fileDialogFotoProfil.FileName;
             }
             string email = textBoxEmail.Text;
             MainForm.service.Daftar(username, password, namaLengkap, tanggalLahir, noKTP, fotoDiri, fotoProfil, email,selected_kota);
 
-            MessageBox.Show("Berhasil membuat akun");
+            MessageBox.Show("Account is succesfully created");
 
             this.pictureBox2.Image = Properties.Resources.Checked_true;
             //Proses login selesai, User Control close, Clear object yg show di panelUtama
@@ -83,12 +84,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             try
             {
-                fileDialog = new OpenFileDialog();
-                if (fileDialog.ShowDialog() == DialogResult.OK)
+                fileDialogFotoProfil = new OpenFileDialog();
+                if (fileDialogFotoProfil.ShowDialog() == DialogResult.OK)
                 {
-                    if (Path.GetExtension(fileDialog.FileName) == ".jpg")
+                    if (Path.GetExtension(fileDialogFotoProfil.FileName) == ".jpg")
                     {
-                        Image selectedImageFotoProfil = new Bitmap(fileDialog.FileName);
+                        Image selectedImageFotoProfil = new Bitmap(fileDialogFotoProfil.FileName);
                         panelFotoProfil.BackgroundImage = selectedImageFotoProfil;
                         panelFotoProfil.BackgroundImageLayout = ImageLayout.Zoom;
                         panelFotoProfil.Visible = true;
@@ -109,12 +110,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             try
             {
-                fileDialog = new OpenFileDialog();
-                if (fileDialog.ShowDialog() == DialogResult.OK)
+                fileDialogFotoDiri = new OpenFileDialog();
+                if (fileDialogFotoDiri.ShowDialog() == DialogResult.OK)
                 {
-                    if (Path.GetExtension(fileDialog.FileName) == ".jpg")
+                    if (Path.GetExtension(fileDialogFotoDiri.FileName) == ".jpg")
                     {
-                        Image selectedImageFotoDiri = new Bitmap(fileDialog.FileName);
+                        Image selectedImageFotoDiri = new Bitmap(fileDialogFotoDiri.FileName);
                         panelFotoDiri.BackgroundImage = selectedImageFotoDiri;
                         panelFotoDiri.BackgroundImageLayout = ImageLayout.Zoom;
                         panelFotoDiri.Visible = true;

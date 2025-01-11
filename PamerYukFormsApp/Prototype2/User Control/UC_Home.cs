@@ -25,31 +25,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             mainForm.panel1.Show();
             mainForm.panel1.BringToFront();
-            labelHariIni.Text = DateTime.Now.ToString("D");
 
-            dataGridViewDaftarTeman.DataSource = MainForm.service.ListTeman;
-            dataGridViewDaftarTeman.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            if (dataGridViewDaftarTeman.Columns.Count == 3)
-            {
-                DataGridViewButtonColumn buttonLihatAkun = new DataGridViewButtonColumn();
-                buttonLihatAkun.Text = "Lihat Profil";
-                buttonLihatAkun.HeaderText = "Aksi";
-                buttonLihatAkun.UseColumnTextForButtonValue = true;
-                buttonLihatAkun.Name = "buttonLihatAkun";
-                dataGridViewDaftarTeman.Columns.Add(buttonLihatAkun);
-            }
-
-            flowLayoutPanelRequestPertemanan.AutoScroll = true;
-            flowLayoutPanelRequestPertemanan.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanelRequestPertemanan.WrapContents = false;
-            flowLayoutPanelRequestPertemanan.Controls.Clear();
-
-            for (int i = 0; i < 2; i++)
-            {
-                UC_RequestPertemananMasuk rpm = new UC_RequestPertemananMasuk(this);
-
-                this.flowLayoutPanelRequestPertemanan.Controls.Add(rpm);
-            }
+            DisplayOnLoad();
         }
 
         private void labelPertemananTerkirim_Click(object sender, EventArgs e)
@@ -91,7 +68,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             UC_CariTeman uC_Daftar = new UC_CariTeman(this);
             mainForm.panelUtama.Controls.Remove(this);
             mainForm.panelUtama.Controls.Add(uC_Daftar);
-        }            
+        }
 
         private void dataGridViewDaftarTeman_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -100,7 +77,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 string username = dataGridViewDaftarTeman.CurrentRow.Cells["username"].Value.ToString();
                 DateTime tglBerteman = DateTime.Parse(dataGridViewDaftarTeman.CurrentRow.Cells["tglBerteman"].Value.ToString());
                 string status = dataGridViewDaftarTeman.CurrentRow.Cells["status"].Value.ToString();
-                
+
                 mainForm.panelUtama.Controls.Clear();
 
                 UC_ProfilTeman uc_profileTeman = new UC_ProfilTeman(this, new Teman(username, tglBerteman, status));
@@ -108,5 +85,53 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 mainForm.panelUtama.Controls.Add(uc_profileTeman);
             }
         }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        #region METHOD 
+        private void DisplayOnLoad()
+        {
+            //Header
+            labelCurrentUser.Text = MainForm.service.Current_user.Username;
+            labelHariIni.Text = DateTime.Now.ToString("D");
+
+            DisplayDaftarTeman();
+            DisplayRequestPertemanan();
+        }
+
+        private void DisplayDaftarTeman()
+        {
+            dataGridViewDaftarTeman.DataSource = MainForm.service.ListTeman;
+            dataGridViewDaftarTeman.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (dataGridViewDaftarTeman.Columns.Count == 3)
+            {
+                DataGridViewButtonColumn buttonLihatAkun = new DataGridViewButtonColumn();
+                buttonLihatAkun.Text = "Lihat Profil";
+                buttonLihatAkun.HeaderText = "Aksi";
+                buttonLihatAkun.UseColumnTextForButtonValue = true;
+                buttonLihatAkun.Name = "buttonLihatAkun";
+                dataGridViewDaftarTeman.Columns.Add(buttonLihatAkun);
+            }
+        }
+
+        private void DisplayRequestPertemanan()
+        {
+            flowLayoutPanelRequestPertemanan.AutoScroll = true;
+            flowLayoutPanelRequestPertemanan.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanelRequestPertemanan.WrapContents = false;
+            flowLayoutPanelRequestPertemanan.Controls.Clear();
+
+            for (int i = 0; i < 2; i++) // Note buat UI ini nanti kalian harus ganti foreach
+            {
+                UC_RequestPertemananMasuk rpm = new UC_RequestPertemananMasuk(this);
+
+                this.flowLayoutPanelRequestPertemanan.Controls.Add(rpm);
+            }
+        }
+        #endregion
     }
 }

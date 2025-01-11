@@ -24,9 +24,7 @@ namespace PamerYukFormsApp.Prototype2
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            /*this.panel1.Hide();
-            this.NavigationBar.Hide();*/
-            this.IsMdiContainer = true;
+            //this.IsMdiContainer = true;
             //biar wkt load, yg lgsg ke load uC_Login
             this.Visible = false;
             try
@@ -43,21 +41,6 @@ namespace PamerYukFormsApp.Prototype2
             //Menampilkan user control Login di panelUtama
             UC_Login uC_Login = new UC_Login(this);
             panelUtama.Controls.Add(uC_Login);
-
-            //Kalau sudah ada yg login, baru OnLoad listOfFriends
-            if (uC_Login.confirmLogin)
-            {
-                service.OnLoad();
-            }
-
-            //Pas aku pindah ke UC, code di bwh bikin error jadi kuakali pake condition di atas
-            /*if (service.Current_user == null) //If user not logged in
-            {
-                Application.Exit();
-            }*/
-
-            //service.OnLoad();
-            //            
         }
 
         private void AddUserControl(UserControl userControl)
@@ -72,16 +55,14 @@ namespace PamerYukFormsApp.Prototype2
         {
             UC_Home uc_home = new UC_Home(this);
             AddUserControl(uc_home);
-            this.MaximizeBox = true;
             ResetNavigationBar();
             this.buttonHome.Image = Properties.Resources.Home_true;
         }
 
         private void buttonTambahKonten_Click(object sender, EventArgs e)
         {
-            UC_TambahKonten uc_tambah = new UC_TambahKonten(this);
+            UC_DaftarKonten uc_tambah = new UC_DaftarKonten(this);
             AddUserControl(uc_tambah);
-            this.MaximizeBox = true;
             ResetNavigationBar();
             this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_true;
         }
@@ -90,7 +71,6 @@ namespace PamerYukFormsApp.Prototype2
         {
             UC_Chat uc_chat = new UC_Chat(this);
             AddUserControl(uc_chat);
-            this.MaximizeBox = true;
             ResetNavigationBar();
             this.buttonChat.Image = Properties.Resources.Chat_true;
         }
@@ -99,7 +79,6 @@ namespace PamerYukFormsApp.Prototype2
         {
             UC_Profile uc_profile = new UC_Profile(this);
             AddUserControl(uc_profile);
-            this.MaximizeBox = true;
             ResetNavigationBar();
             this.buttonProfile.Image = Properties.Resources.Profile_true;
         }
@@ -110,6 +89,11 @@ namespace PamerYukFormsApp.Prototype2
             this.buttonChat.Image = Properties.Resources.Chat_false;
             this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_false;
             this.buttonProfile.Image = Properties.Resources.Profile_false;
+        }
+
+        private void panelUtama_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

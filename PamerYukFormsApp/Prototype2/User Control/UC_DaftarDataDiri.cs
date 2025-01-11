@@ -36,15 +36,22 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonDaftar_Click(object sender, EventArgs e)
         {
+            string namaLengkap = textBoxNamaLengkap.Text;
             string noKTP = textBoxNoKtp.Text;
             Kota selected_kota = (Kota)comboBoxKota.SelectedItem;
             DateTime tanggalLahir = dateTimePickerTglLahir.Value.Date;
-            string profile_picture = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
+            string fotoDiri = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
+            string fotoProfil = @"C:\PamerYuk\default_image.jpg";//nanti set default image di Folder yang dicreate
             if (fileDialog.FileName != null)
             {
-                profile_picture = fileDialog.FileName;
+                fotoDiri = fileDialog.FileName;
             }
-            MainForm.service.Daftar(username, password, tanggalLahir, noKTP, profile_picture, selected_kota);
+            if (fileDialog.FileName != null)
+            {
+                fotoProfil = fileDialog.FileName;
+            }
+            string email = textBoxEmail.Text;
+            MainForm.service.Daftar(username, password, namaLengkap, tanggalLahir, noKTP, fotoDiri, fotoProfil, email,selected_kota);
 
             MessageBox.Show("Berhasil membuat akun");
 
@@ -66,7 +73,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         }
 
-        private void buttonUploadImage_Click(object sender, EventArgs e)
+        private void UC_DaftarDataDiri_Load(object sender, EventArgs e)
+        {
+            comboBoxKota.DataSource = FormUtama.service.ListKota;
+            comboBoxKota.DisplayMember = "Nama";
+        }
+
+        private void buttonUploadFotoProfil_Click(object sender, EventArgs e)
         {
             try
             {
@@ -75,10 +88,10 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 {
                     if (Path.GetExtension(fileDialog.FileName) == ".jpg")
                     {
-                        Image selectedImage = new Bitmap(fileDialog.FileName);
-                        panelFoto.BackgroundImage = selectedImage;
-                        panelFoto.BackgroundImageLayout = ImageLayout.Zoom;
-                        panelFoto.Visible = true;
+                        Image selectedImageFotoProfil = new Bitmap(fileDialog.FileName);
+                        panelFotoProfil.BackgroundImage = selectedImageFotoProfil;
+                        panelFotoProfil.BackgroundImageLayout = ImageLayout.Zoom;
+                        panelFotoProfil.Visible = true;
                     }
                     else
                     {
@@ -92,10 +105,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
         }
 
-        private void UC_DaftarDataDiri_Load(object sender, EventArgs e)
+        private void buttonUploadFotoDiri_Click(object sender, EventArgs e)
         {
-            comboBoxKota.DataSource = FormUtama.service.ListKota;
-            comboBoxKota.DisplayMember = "Nama";
+            try
+            {
+                fileDialog = new OpenFileDialog();
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    if (Path.GetExtension(fileDialog.FileName) == ".jpg")
+                    {
+                        Image selectedImageFotoDiri = new Bitmap(fileDialog.FileName);
+                        panelFotoDiri.BackgroundImage = selectedImageFotoDiri;
+                        panelFotoDiri.BackgroundImageLayout = ImageLayout.Zoom;
+                        panelFotoDiri.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Only support jpg.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

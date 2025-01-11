@@ -21,21 +21,24 @@ namespace PamerYukLibrary.DAO
             while (dr.Read())
             {
                 //User
-                string usname = dr.GetValue(2).ToString();
-                DateTime tgllahir = DateTime.Parse(dr.GetValue(4).ToString());
-                string noKTP = dr.GetValue(5).ToString();
-                string foto = dr.GetValue(6).ToString(); //Still confuse with this image data format
-                int kota_id_fk = int.Parse(dr.GetValue(7).ToString());
+                string usname = dr.GetValue(0).ToString();
+                string namaLengkap = dr.GetValue(2).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(3).ToString());
+                string noKTP = dr.GetValue(4).ToString();
+                string fotoDiri = dr.GetValue(5).ToString(); //Still confuse with this image data format
+                string fotoProfil = dr.GetValue(6).ToString();
+                string email = dr.GetValue(7).ToString();
+                int kota_id_fk = int.Parse(dr.GetValue(8).ToString());
 
                 //Kota
-                int kota_id = int.Parse(dr.GetValue(8).ToString());
-                string nama = dr.GetValue(9).ToString();
+                int kota_id = int.Parse(dr.GetValue(9).ToString());
+                string nama = dr.GetValue(10).ToString();
 
                 //Create Kota
                 Kota newKota = new Kota(kota_id, nama);
 
                 //Create User
-                user = new User(usname, tgllahir, noKTP, foto, newKota);
+                user = new User(usname, namaLengkap, tgllahir, noKTP, fotoDiri, fotoProfil, email, newKota);
                 listAkun.Add(user);
             }
             return listAkun;
